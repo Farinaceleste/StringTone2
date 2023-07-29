@@ -14,7 +14,8 @@
 
 <body class="body">
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="header2">Envios gratis en compras superiores a $100.000</div>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <img src="./images/logofinal.png" alt="Logo" width="120" height="120">
@@ -49,72 +50,106 @@
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar productos"
                             aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+    </container>
 
     <main>
 
-        <section class="portadas">
-            <img class="portada" src="./images/portada1.jpg.png" alt="">
-            <img class="portada" src="./images/portada2.jpg" alt="">
-            <img class="portada" src="./images/portada3.png" alt="">
-        </section>
+        <div class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide mx-auto p-2 w-75">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/portada1.jpg.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/portada2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/portada3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
+        <div class="container">
+            <h3 class="titulos"> ¡Somos StringTone!</h3>
+            <div> La casa de música mas completa de Argentina. </div>
+            <div class="parrafo"> StringTone es una casa de música líder en instrumentos musicales y equipamiento de
+                audio
+                profesional.
+                Disponemos de una amplia variedad de productos en nuestro catálogo, desde instrumentos de orquesta y
+                estudio, hasta guitarras, baterías, pianos digitales, saxofones y ukeleles, además de equipos de
+                grabación y
+                microfonía líderes en el mercado.
 
-        <h3> ¡Somos StringTone!</h3>
-        <h4> La casa de música mas completa de Argentina. </h4>
-        <p class="parrafo"> StringTone es una casa de música líder en instrumentos musicales y equipamiento de audio
-            profesional.
-            Disponemos de una amplia variedad de productos en nuestro catálogo, desde instrumentos de orquesta y
-            estudio, hasta guitarras, baterías, pianos digitales, saxofones y ukeleles, además de equipos de
-            grabación y
-            microfonía líderes en el mercado.
+                <p class="parrafo"> Desde guitarras criollas para principiantes hasta micrófonos y amplificadores
+                    profesionales, la tienda de
+                    instrumentos musicales online StringTone dispone de una amplia gama de equipamiento musical. No
+                    importa
+                    si
+                    lo que buscas es un micrófono, un teclado musical, una batería electrónica o un bajo eléctrico,
+                    siempre
+                    te
+                    daremos asesoramiento en lo que necesites.
+                </p>
+                <p class="parrafo">
+                    Tenemos algunas de las marcas más populares en stock, tales como Fender, Roland, Casio, Marshall,
+                    Ibanez,
+                    Behringer y Shure, sin olvidar que somos distribuidores oficiales Yamaha para instrumentos musicales
+                    y
+                    audio
+                    en Argentina.
+                </p>
 
-        <p class="parrafo"> Desde guitarras criollas para principiantes hasta micrófonos y amplificadores
-            profesionales, la tienda de
-            instrumentos musicales online StringTone dispone de una amplia gama de equipamiento musical. No importa
-            si
-            lo que buscas es un micrófono, un teclado musical, una batería electrónica o un bajo eléctrico, siempre
-            te
-            daremos asesoramiento en lo que necesites.
-        </p>
-        <p class="parrafo">
-            Tenemos algunas de las marcas más populares en stock, tales como Fender, Roland, Casio, Marshall,
-            Ibanez,
-            Behringer y Shure, sin olvidar que somos distribuidores oficiales Yamaha para instrumentos musicales y
-            audio
-            en Argentina.
-        </p>
+            </div>
+            <hr>
+            <div class="titulos">Productos Recomendados</div>
+            <section class="grilla">
+                <div class="guitarra1"><img src="./images/epiphoneguitar.jpg" alt=""></div>
+                <div class="guitarra2"><img src="./images/ibanezguitar.webp" alt=""></div>
+                <div class="guitarra3"><img src="./images/ltdguitar.jfif" alt=""></div>
+                <div class="guitarra4"><img src="./images/epiphoneguitar2.jpg" alt=""></div>
+                <div class="guitarra5"><img src="./images/ltdguitar2.jfif" alt=""></div>
+                <div class="guitarra6"><img src="./images/epiphonenueva.webp" alt=""></div>
+            </section>
 
-        <hr>
-        <h1>Productos Recomendados.</h1>
-        <section class="grilla">
-            <div class="guitarra1"><img src="./images/epiphoneguitar.jpg" alt=""></div>
-            <div class="guitarra2"><img src="./images/ibanezguitar.webp" alt=""></div>
-            <div class="guitarra3"><img src="./images/ltdguitar.jfif" alt=""></div>
-            <div class="guitarra4"><img src="./images/jaguar6.png" alt=""></div>
-            <div class="guitarra5"><img src="./images/ltdguitar2.jfif" alt=""></div>
-            <div class="guitarra6"><img src="./images/prs5.png" alt=""></div>
-        </section>
+            <hr>
 
-        <hr>
+            <div class="titulos">Marcas</div>
+            <section class="marcas">
+                <img src="./images/logofender.png" alt="" width=150px height=150px>
+                <img src="./images/epiphonelogo.png" alt="" width=150px height=150px>
+                <img src="./images/casiologo.png" alt="" width=150px height=150px>
+                <img src="./images/ltdlogo.png" alt="" width=150px height=150px>
+                <img src="./images/squierlogo.png" alt="" width=150px height=150px>
+                <img src="./images/prslogo.png" alt="" width=150px height=150px>
+                <img src="./images/yamahalogo.png" alt="" width=150px height=150px>
+                <img src="./images/gibsonlogo.png" alt="" width=150px height=150px>
 
-        <h1>Marcas</h1>
-        <section class="marcas">
-            <img src="./images/logofender.png" alt="" width=150px height=150px>
-            <img src="./images/epiphonelogo.png" alt="" width=150px height=150px>
-            <img src="./images/casiologo.png" alt="" width=150px height=150px>
-            <img src="./images/ltdlogo.png" alt="" width=150px height=150px>
-            <img src="./images/squierlogo.png" alt="" width=150px height=150px>
-            <img src="./images/prslogo.png" alt="" width=150px height=150px>
-            <img src="./images/yamahalogo.png" alt="" width=150px height=150px>
-            <img src="./images/gibsonlogo.png" alt="" width=150px height=150px>
-
-        </section>
+            </section>
 
     </main>
 
@@ -132,25 +167,26 @@
             <div>
                 <li>Lun. a Vie. 10 a 18 hrs.</li>
             </div>
-            <div class="redes">
-                <i class="bi bi-facebook fb"></i>
-                <i class="bi bi-twitter tw"></i>
-                <i class="bi bi-instagram ig"></i>
-            </div>
         </ul>
-
+        <div class="redes">
+            <i class="bi bi-facebook fb"></i>
+            <i class="bi bi-twitter tw"></i>
+            <i class="bi bi-instagram ig"></i>
+            <i class="bi bi-pinterest pi"></i>
+            <i class="bi bi-linkedin li"></i>
+        </div>
         <ul class="footer_list">
             <div>
-                <li>Cómo comprar. <a href="como.comprar"></a></li>
+                <li>Cómo comprar.</li>
             </div>
             <div>
-                <li>Promociones bancarias. <a href="promociones.bancarias"></a></li>
+                <li>Promociones bancarias. </a></li>
             </div>
             <div>
-                <li>Cambios y devoluciones. <a href="cambios.devoluciones"></a></li>
+                <li>Cambios y devoluciones. </li>
             </div>
             <div>
-                <li>Defensa del Consumidor. <a href="Defensa.consumidor"></a> </li>
+                <li>Defensa del Consumidor. </li>
             </div>
 
             <div>
@@ -158,7 +194,6 @@
             </div>
         </ul>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

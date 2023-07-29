@@ -11,74 +11,60 @@
     background-color: gray;
 }
 
-.header, .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: white;
+}
+.navbar {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    font-size: 22px;
+    gap: 100px;
   }  
+
+.header .nav-item {
+    gap:10px;
+    padding: 30px;
+}
+
+.header2 {
+    display:flex;
+    background-color: rgb(124, 209, 12); 
+    justify-content: center;
+    align-content: center;
+}
 
 
 /* fotos de productos recomendados*/
 
 .grilla {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-    width: 100%;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.grilla>* {
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    overflow: hidden;
-    gap: 0.5rem;
-    padding: 1rem;
-}
-
-.portadas {
-
-    display: flex;
-    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap:5px;
+    width: 100vh;
 }
 
-.portada {
-    width: 30%;
-    object-fit: cover;
-}
 
 .formulario1 {
     display: flex;
     align-items: center;
-    margin: 7rem;
-    padding: 2rem;
-
-
+    justify-content: center;   
 }
 
 .preguntas {
     margin: 2rem;
-    list-style-type: none;
-    font-size: x-large;
-    padding: 5rem;
-    text-align: center;
-
+    font-size: medium;
+    padding: 0.25rem;
+    text-align: justify;
+    background-color: grey;
 }
 
 .fotoportada {
@@ -86,39 +72,81 @@
     width: 30%;
 }
 
-
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    align-content: space-between;
-
+.carrusel {
+    z-index:5;
 }
 
-.footer_list {
+.footer  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #171718;
+    align-content: space-between;
+    margin-top: 20px;
+}
+
+footer ul li {
     list-style: none;
     color: whitesmoke;
     margin-left: 3rem;
     margin-right: 5rem;
-    padding: 10px;
+    padding: 2px;
     font-size: 15px;
 }
 
-.QuienesSomos {
-    margin: 2rem;
-    font-size: x-large;
-    padding: 3rem;
-    margin-top:3rem;
-    align-items: center;
+footer ul {
+    margin-top:20px;
+}
 
+
+/*redes sociales*/
+
+.redes{
+    cursor: pointer;
+    font-size: 50px;
+    margin: 2rem;
+    gap:15px;
+    transition: .2s;
+}
+
+.redes i:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+    transition: 0.5s;
+}
+.container {
+    margin:10px;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+.redes .fb:hover {
+    color:#181dc1;
+}
+
+.redes .tw:hover {
+    color:#0077b6;
+}
+
+.redes .ig:hover {
+    color:#ef476f;
+}
+
+.redes .pi:hover {
+    color:red; 
+}
+
+.redes .li:hover {
+    color:#0077b6;
 }
 
 .mapa {
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 100px;
-   
+    padding: 50px;
+    width: 75%;
 
 }
 
@@ -133,7 +161,6 @@
     row-gap: 0rem;
 }
 
-
 h3 {
     display: flex;
     color: whitesmoke;
@@ -143,32 +170,18 @@ h3 {
     justify-content: center;
     font-weight: bold;;
 }
-img {
-    max-width: 100%;
-}
 
 .marcas {
     display: flex;
-    align-items: stretch;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
     padding: 0.25rem;
     gap: 0.25rem;
     width: 100%;
-    border-style: groove;
-
-}
-
-/*redes sociales*/
-
-.redes {
-    display: flex;
-    align-items: first baseline;
+    flex-wrap: wrap;
     cursor: pointer;
-
 }
-
 
 /*logo whatsapp fixed */
 
@@ -178,19 +191,13 @@ img {
     bottom: 0;
     background-color: none;
     margin-right: 10px;
-    padding: auto;
-
+    cursor: pointer;
 }
 
 h2 {
     text-decoration: none;
     color: whitesmoke;
     text-align: center;
-}
-
-.parrafo {
-    text-align: center;
-    margin-right: 10rem;
 }
 
 .comocompro {
@@ -201,21 +208,74 @@ h2 {
     margin: 5rem;
 }
 
+div .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    padding: 2px;
+}
+
 
 /*tienda*/
 .cartitas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     padding: 3rem;
     border-radius: 15rem;
-    margin: 1rem;
-    gap: 3rem;
+    margin: 5px;
+    gap: 0.5rem;
+    text-align: center;
+
 
 }
 
+section div img {
+    height: 300px;
+    object-fit: cover;
 
+
+}
 
 .titulos {
-    font-display: center;
-    color:whitesmoke;
+    display: flex;
+    font-size:35px;
+    padding:20px;
+    font-weight: bold;
+    justify-content: center;    
+}
+
+.menu_superior {
+    display: flex;
+    padding:5px;
+    margin:5px;
+    justify-items: left;
+    align-items: center;
+    gap:2rem;
+    border-radius: 2rem;
+    font-size: medium;
+    font-weight: bold;
+    }
+
+.card-img-top {
+
+    height: 10;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    text-align: center;
+    padding-left: 100px;
+}
+
+.footer_list a{
+    text-decoration: none;
+    color: whitesmoke;
+    
 }
