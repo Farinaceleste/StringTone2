@@ -11,12 +11,14 @@
     background-color: gray;
 }
 
+/*HEADER*/
+
 .header {
     display: grid;
     grid-template-columns: 1fr;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 6;
 }
 .navbar {
     display: flex;
@@ -33,49 +35,15 @@
 
 .header2 {
     display:flex;
-    background-color: rgb(124, 209, 12); 
+    background-color: rgb(199, 201, 197); 
     justify-content: center;
     align-content: center;
+    color:red;
+    font-weight: bold;
 }
 
 
-/* fotos de productos recomendados*/
-
-.grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    cursor: pointer;
-    gap:5px;
-    width: 100vh;
-}
-
-
-.formulario1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-}
-
-.preguntas {
-    margin: 2rem;
-    font-size: medium;
-    padding: 0.25rem;
-    text-align: justify;
-    background-color: grey;
-}
-
-.fotoportada {
-    background-color: #242222;
-    width: 30%;
-}
-
-.carrusel {
-    z-index:5;
-}
-
+/* footer */
 .footer  {
     display: flex;
     justify-content: space-between;
@@ -97,6 +65,11 @@ footer ul {
     margin-top:20px;
 }
 
+.footer_list a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
 
 /*redes sociales*/
 
@@ -141,34 +114,54 @@ footer ul {
     color:#0077b6;
 }
 
-.mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    width: 75%;
+/* fotos de productos recomendados*/
+
+.grilla {
+    display: grid;
+    grid-template-columns: 20;
+   column-gap: 5px;
+   align-content: center;
 
 }
 
-.seguinos {
-    margin: 1rem;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: stretch;
-    color: black;
-    flex: auto;
-    justify-content: space-between;
-    row-gap: 0rem;
+.guitarras {
+    width: 20px;
 }
 
-h3 {
+
+/* FORMULARIO CONTACTO */
+
+
+.formulario1 {
     display: flex;
-    color: whitesmoke;
-    margin: 3rem;
-    padding-inline-start: 5rem;
-    align-items: center;
+    padding: 15px;  
     justify-content: center;
-    font-weight: bold;;
+    align-items: center;
+    width: 100vh;
+}
+
+
+/*PREGUNTAS FRECUENTES*/
+
+.preguntas {
+    margin-left: 22rem;
+    font-size: medium;
+    padding: 10px;
+    text-align: justify;
+    background-color: grey;
+    width: 50%;
+}
+
+
+/*PORTADA INDEX*/
+
+.fotoportada {
+    background-color: #242222;
+    width: 30%;
+}
+
+.carrusel {
+    z-index: 5;
 }
 
 .marcas {
@@ -183,6 +176,27 @@ h3 {
     cursor: pointer;
 }
 
+
+/*QUIENES SOMOS*/
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 75%;
+}
+
+.seguinos {
+    margin: 1rem;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+    color: black;
+    flex: auto;
+    justify-content: space-between;
+    row-gap: 0rem;
+}
+
 /*logo whatsapp fixed */
 
 
@@ -194,11 +208,6 @@ h3 {
     cursor: pointer;
 }
 
-h2 {
-    text-decoration: none;
-    color: whitesmoke;
-    text-align: center;
-}
 
 .comocompro {
     display: flex;
@@ -225,16 +234,7 @@ div .card {
     border-radius: 15rem;
     margin: 5px;
     gap: 0.5rem;
-    text-align: center;
-
-
-}
-
-section div img {
-    height: 300px;
-    object-fit: cover;
-
-
+    text-align: centergit ;
 }
 
 .titulos {
@@ -274,8 +274,3 @@ section div img {
     padding-left: 100px;
 }
 
-.footer_list a{
-    text-decoration: none;
-    color: whitesmoke;
-    
-}
