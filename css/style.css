@@ -20,30 +20,31 @@
     top: 0;
     z-index: 6;
 }
+
 .navbar {
     display: flex;
     position: sticky;
     font-size: 22px;
     gap: 100px;
-  }  
+}
 
 .header .nav-item {
-    gap:10px;
+    gap: 10px;
     padding: 30px;
 
 }
 
 .header2 {
-    display:flex;
-    background-color: rgb(199, 201, 197); 
+    display: flex;
+    background-color: rgb(199, 201, 197);
     justify-content: center;
     align-content: center;
-    color:red;
+    color: red;
     font-weight: bold;
 }
 
 /* footer */
-.footer  {
+.footer {
     display: flex;
     justify-content: space-between;
     background-color: #171718;
@@ -54,31 +55,31 @@
 footer ul li {
     list-style: none;
     color: whitesmoke;
-    margin:4.5px;
+    margin: 4.5px;
     padding: 2px;
     font-size: 15px;
 }
 
 footer ul {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-.footer_list a{
+.footer_list a {
     text-decoration: none;
-    color: whitesmoke;   
+    color: whitesmoke;
 }
 
 /*redes sociales*/
 
-.redes{
+.redes {
     cursor: pointer;
     font-size: 50px;
     margin: 2rem;
-    gap:15px;
+    gap: 15px;
     transition: .2s;
 }
 
-.redes i:hover{
+.redes i:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
     filter: none;
@@ -86,30 +87,30 @@ footer ul {
 }
 
 .container {
-    margin:10px;
+    margin: 10px;
     font-size: 1.5rem;
     display: block;
     text-align: center;
 }
 
 .redes .fb:hover {
-    color:#181dc1;
+    color: #181dc1;
 }
 
 .redes .tw:hover {
-    color:#0077b6;
+    color: #0077b6;
 }
 
 .redes .ig:hover {
-    color:#ef476f;
+    color: #ef476f;
 }
 
 .redes .pi:hover {
-    color:red; 
+    color: red;
 }
 
 .redes .li:hover {
-    color:#0077b6;
+    color: #0077b6;
 }
 
 
@@ -120,18 +121,16 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
-    gap:15px;
-    padding:3px;
+    width: auto;
+    height: auto;
+    gap: 1.5px;
 }
 
-.guitarras{
-    margin:20px;
+.guitarras {
+    margin: 20px;
     max-width: 200px;
     min-width: 200px;
     box-sizing: border-box;
-    border-radius: 20px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     cursor: pointer;
 }
 
@@ -153,23 +152,23 @@ footer ul {
 /* FORMULARIO CONTACTO */
 
 .formulario1 {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    margin:15px;
+    margin: 15px;
     width: 450px;
 }
 
 /*PREGUNTAS FRECUENTES*/
 
 .preguntnas {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: medium;
     text-align: justify;
     background-color: grey;
     width: 60%;
-    margin:5rem;
+    margin: 5rem;
 }
 
 /*PORTADA INDEX*/
@@ -193,7 +192,7 @@ iframe .mapa {
     justify-content: center;
     align-items: center;
     width: 75px;
-    margin:5px;
+    margin: 5px;
 }
 
 .seguinos {
@@ -209,7 +208,7 @@ iframe .mapa {
 
 /*logo whatsapp fixed */
 
-.whatsapp{
+.whatsapp {
     display: flex;
     align-items: end;
     justify-content: right;
@@ -217,13 +216,14 @@ iframe .mapa {
     bottom: 0;
     cursor: pointer;
     font-size: 75px;
-    color:black;
-    right:0;
+    color: black;
+    right: 0;
     padding: 1px;
     margin: 30px;
 }
+
 .whatsapp:hover {
-    color:green;
+    color: green;
     transition: 0.5s;
 }
 
@@ -236,14 +236,14 @@ iframe .mapa {
 }
 
 /*tienda*/
- .cartitas {
+.cartitas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 0.5rem;
     text-align: center;
-    margin:20px;
+    margin: 20px;
 }
 
 img .card-img-top {
@@ -252,23 +252,23 @@ img .card-img-top {
 
 .titulos {
     display: flex;
-    font-size:35px;
-    padding:20px;
+    font-size: 35px;
+    padding: 20px;
     font-weight: bold;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .menu_superior {
     display: flex;
-    padding:5px;
-    margin:5px;
+    padding: 5px;
+    margin: 5px;
     justify-items: left;
     align-items: center;
-    gap:2rem;
+    gap: 2rem;
     border-radius: 2rem;
     font-size: medium;
     font-weight: bold;
-    }
+}
 
 div .card {
     display: flex;
@@ -296,67 +296,78 @@ div .card img {
 
 
 
-/* MEDIA QUERIES */ 
+/* MEDIA QUERIES */
 
-@media (max-width: 550px){
+@media (max-width: 650px) {
     div i {
-        display:flex;
-        padding:5px;
+        display: flex;
+        padding: 5px;
         font-size: 20px;
-        gap:1.5px;
+        gap: 1.5px;
     }
 
-iframe .mapa{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    padding:10px;
-}
-    
-.cartitas {
-    grid-template-columns: 1fr;
-}
-
-
-.footer ul li {
-    margin:2.5px;
-}
-
-
-
-form {
-    margin:1rem;
-    padding: 1.5rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    iframe .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        padding: 10px;
     }
 
-.accordion {
-    width: 70%;
-   margin-left: 55px;
-}
+    .cartitas {
+        grid-template-columns: 1fr;
+    }
 
-.mapa {
-    margin:5px;
-    width: 50vh;
-    height: 50vh;
-}
 
-.marcas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-    padding: 5px;;
-}
+    .footer ul li {
+        margin: 2.5px;
+    }
 
-.guitarras img {
-    display:grid;
-    
-}
+    form {
+        margin: 1rem;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 70%;
+        margin-left: 55px;
+    }
+
+    .mapa {
+        margin: 5px;
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .marcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+        padding: 5px;
+        
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+ 
+
+    footer {
+        width: 100%;
+    }
+
+    .footer2 {
+        width: auto;
+    }
+
+
 
 }
