@@ -121,11 +121,26 @@ footer ul {
     justify-content: center;
     align-items: center;
     column-gap: 5px;
-    align-content: center;
     gap:15px;
     padding:3px;
+}
+
+.guitarras{
+    margin:20px;
+    max-width: 200px;
+    min-width: 200px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
 
 }
+
+.guitarras img {
+    width: 200px;
+}
+
+
 
 /* FORMULARIO CONTACTO */
 
@@ -200,12 +215,11 @@ footer ul {
 
 .whatsapp{
     position: fixed;
-    display: flex;
-    justify-content: right;
     bottom: 0;
     cursor: pointer;
     font-size: 75px;
     color:black;
+    float: right;
     
 }
 
