@@ -23,7 +23,6 @@
 .navbar {
     display: flex;
     position: sticky;
-    width: 100%;
     font-size: 22px;
     gap: 100px;
   }  
@@ -31,6 +30,7 @@
 .header .nav-item {
     gap:10px;
     padding: 30px;
+
 }
 
 .header2 {
@@ -112,6 +112,8 @@ footer ul {
     color:#0077b6;
 }
 
+
+
 /* fotos de productos recomendados*/
 
 .grilla {
@@ -159,13 +161,15 @@ footer ul {
 
 /*PREGUNTAS FRECUENTES*/
 
-.preguntas {
-    margin-left: 22rem;
+.preguntnas {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size: medium;
-    padding: 10px;
     text-align: justify;
     background-color: grey;
-    width: 50%;
+    width: 60%;
+    margin:5rem;
 }
 
 /*PORTADA INDEX*/
@@ -214,8 +218,10 @@ iframe .mapa {
     cursor: pointer;
     font-size: 75px;
     color:black;
+    right:0;
+    padding: 1px;
+    margin: 30px;
 }
-
 .whatsapp:hover {
     color:green;
     transition: 0.5s;
@@ -271,16 +277,17 @@ div .card {
     margin: auto;
     max-width: 300px;
     min-width: 300px;
+    cursor: pointer;
 }
 
 div .card img {
     width: 75px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .card-text {
     text-align: center;
-
+    font-size: 20px;
 }
 
 .card-title {
@@ -289,23 +296,67 @@ div .card img {
 
 
 
-/* MEDIA QUERIES */ /*
+/* MEDIA QUERIES */ 
 
-@media (min-width: 570px) {
-    .guitarras {
+@media (max-width: 550px){
+    div i {
         display:flex;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: center;
-        flex-wrap: wrap;
+        padding:5px;
+        font-size: 20px;
+        gap:1.5px;
     }
 
-    .footer_list {
-        display:flex;
-        align-items: center;
-        justify-content: center;
+iframe .mapa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding:10px;
+}
+    
+.cartitas {
+    grid-template-columns: 1fr;
+}
 
+
+.footer ul li {
+    margin:2.5px;
+}
+
+
+
+form {
+    margin:1rem;
+    padding: 1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     }
 
+.accordion {
+    width: 70%;
+   margin-left: 55px;
+}
 
-*/
+.mapa {
+    margin:5px;
+    width: 50vh;
+    height: 50vh;
+}
+
+.marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: 5px;;
+}
+
+.guitarras img {
+    display:grid;
+    
+}
+
+}
