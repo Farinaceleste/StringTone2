@@ -42,7 +42,6 @@
     font-weight: bold;
 }
 
-
 /* footer */
 .footer  {
     display: flex;
@@ -55,8 +54,7 @@
 footer ul li {
     list-style: none;
     color: whitesmoke;
-    margin-left: 3rem;
-    margin-right: 5rem;
+    margin:4.5px;
     padding: 2px;
     font-size: 15px;
 }
@@ -67,8 +65,7 @@ footer ul {
 
 .footer_list a{
     text-decoration: none;
-    color: whitesmoke;
-    
+    color: whitesmoke;   
 }
 
 /*redes sociales*/
@@ -87,6 +84,7 @@ footer ul {
     filter: none;
     transition: 0.5s;
 }
+
 .container {
     margin:10px;
     font-size: 1.5rem;
@@ -133,26 +131,31 @@ footer ul {
     border-radius: 20px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     cursor: pointer;
-
 }
 
 .guitarras img {
     width: 200px;
 }
 
-
+.marcas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 0.75rem;
+    max-width: 150px;
+    min-width: 150px;
+    cursor: pointer;
+}
 
 /* FORMULARIO CONTACTO */
 
-
 .formulario1 {
-    display: flex;
-    padding: 15px;  
+    display: flex; 
     justify-content: center;
-    align-items: center;
-    width: 100vh;
+    margin:15px;
+    width: 450px;
 }
-
 
 /*PREGUNTAS FRECUENTES*/
 
@@ -165,7 +168,6 @@ footer ul {
     width: 50%;
 }
 
-
 /*PORTADA INDEX*/
 
 .fotoportada {
@@ -177,26 +179,17 @@ footer ul {
     z-index: 5;
 }
 
-.marcas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding: 0.25rem;
-    gap: 0.25rem;
-    width: 100%;
-    flex-wrap: wrap;
-    cursor: pointer;
+.marcas img {
+    width: 150px;
 }
 
-
 /*QUIENES SOMOS*/
-.mapa {
+iframe .mapa {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    width: 75%;
+    width: 75px;
+    margin:5px;
 }
 
 .seguinos {
@@ -212,15 +205,15 @@ footer ul {
 
 /*logo whatsapp fixed */
 
-
 .whatsapp{
+    display: flex;
+    align-items: end;
+    justify-content: right;
     position: fixed;
     bottom: 0;
     cursor: pointer;
     font-size: 75px;
     color:black;
-    float: right;
-    
 }
 
 .whatsapp:hover {
@@ -236,24 +229,19 @@ footer ul {
     margin: 5rem;
 }
 
-div .card {
+/*tienda*/
+ .cartitas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
-    padding: 2px;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    margin:20px;
 }
 
-
-/*tienda*/
-.cartitas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 3rem;
-    border-radius: 15rem;
-    margin: 5px;
-    gap: 0.5rem;
-    text-align: centergit ;
+img .card-img-top {
+    padding: 5px;
 }
 
 .titulos {
@@ -276,19 +264,48 @@ div .card {
     font-weight: bold;
     }
 
-.card-img-top {
-
-    height: 10;
-    object-fit: cover;
-}
-
-.card {
+div .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+div .card img {
+    width: 75px;
+    padding-top: 5px;
 }
 
 .card-text {
     text-align: center;
-    padding-left: 100px;
+
 }
+
+.card-title {
+    font-weight: bold;
+}
+
+
+
+/* MEDIA QUERIES */ /*
+
+@media (min-width: 570px) {
+    .guitarras {
+        display:flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer_list {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+*/
