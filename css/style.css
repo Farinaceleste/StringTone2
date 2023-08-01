@@ -19,18 +19,22 @@
     position: sticky;
     top: 0;
     z-index: 6;
+    width: 100%;
 }
 
 .navbar {
     display: flex;
     position: sticky;
     font-size: 22px;
-    gap: 100px;
+    width: 100%;
 }
 
-.header .nav-item {
-    gap: 10px;
-    padding: 30px;
+
+.nav-item {
+    justify-content: space-between;
+    gap:30px;
+    padding: 15px;
+    align-items: center;
 
 }
 
@@ -154,10 +158,10 @@ footer ul {
 
 form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 50%;
+    width: 75%;
 
 
 }
@@ -333,7 +337,6 @@ div .card img {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 75%;
     }
 
     .accordion {
@@ -387,6 +390,106 @@ div .card img {
 
     .footer {
         width: 100%;
+        height: 100vh;
+    }
+
+    .footer2 {
+        width: 100%;
+      
+    }
+
+    .header2 {
+        text-align: center;
+        padding:2px;
+        
+    }
+}
+
+@media (max-width: 800px) {
+
+    div i {
+        display: flex;
+        padding: 5px;
+        font-size: 20px;
+        gap: 1.5px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+
+    iframe .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        padding: 10px;
+    }
+
+    .cartitas {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        margin: 1rem;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 70%;
+        margin-left: 45px;
+    }
+
+    .mapa {
+        margin: 5px;
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .marcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 80vh;
+        padding: 5px;
+    }
+
+    .marcas img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80%;
+        padding: 5px;
+        gap: 2px;
+    }
+
+    .guitarras img {
+        border-style: double;
+        gap: 0.5px;
+        padding: 1.5px;
+    }
+
+    .footer ul li {
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
     }
 
     .footer2 {
@@ -399,6 +502,14 @@ div .card img {
         padding:2px;
         
     }
+
+
+
+
+
+
+
+
 
 
 }
