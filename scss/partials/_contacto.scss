@@ -2,21 +2,21 @@
     background-color: grey;
 }
 
-.contacto div {
+.formulario-consulta{
+   @include estilo-formulario;
+  
 
-    align-items: center;
-    font-size: medium;
-    background-color: grey;
-    width: 30%;
-    margin-left: 25rem;
-    margin-bottom: 15px;
+  
+    
+}
 
-label {
-    align-items: baseline;
+.formulario-usuario {
+    @include estilo-formulario;
+    
 }
 
 
-}
+
 .titulos {
     @include estilo-titulos;
 }

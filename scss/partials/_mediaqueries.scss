@@ -51,6 +51,13 @@
     }
 
 
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
 }
 
 
@@ -94,7 +101,7 @@
 
     .cartitas {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
 
     }
@@ -109,18 +116,19 @@
     }
 
     .info {
-        margin-left:0.5px;
+        margin-left: 0.5px;
     }
+
     .info li {
         display: flex;
         align-items: center;
         padding-right: 15px;
-       width: 75%;
+        width: 75%;
         margin: 0.5px;
         align-content: center;
-        text-align:left;
+        text-align: left;
         position: static;
-    
+
     }
 
     .QuienesSomos {
@@ -130,6 +138,14 @@
     .tarjetas-index {
         grid-template-columns: 1fr;
     }
+
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+
+}
 
 }
 
@@ -223,5 +239,16 @@
     .tarjetas-index {
         grid-template-columns: 1fr;
     }
+
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr ;
+       
+    }
+
+
+
+
 
 }

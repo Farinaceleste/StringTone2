@@ -1,36 +1,50 @@
-.info-nosotros {
-    display: flex;
-    align-items: center;
-    width: 75px;
-    gap:20px;
-    padding: 45px;
-}
-
-.info {
- 
-    padding: 20px;
-
-    .info i {
-        gap:10px;
-    }
-
-    li {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        text-align: start;
-        gap:15px;
-        font-size: smaller;
-
-        
-    }
-
-    iframe {
-        width: 50rem;
-    }
-
+main {
+    width: 100%;
 }
 
 .QuienesSomos {
     @include estilo-parrafo;
+}
+
+.container2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    gap: 10px;
+
+
+   
+    .nosotros-imagen {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        margin-right: 15px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info-nosotros {
+       
+        padding: 15px;
+
+        li {
+            list-style: none;
+            font-weight: bold;
+            gap: 5px;
+            margin-right: 50px;
+        }
+
+        .info {
+
+            iframe {
+                width: 350px;
+            }
+        }
+    }
+
+
 }

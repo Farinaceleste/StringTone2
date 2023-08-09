@@ -63,8 +63,11 @@ main {
         img {
             width: 200px;
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-           
 
+            &:hover {
+                transform: scale(1.15);
+                transition: 0.5s;
+            }
         }
     }
 }
@@ -82,10 +85,31 @@ main {
         max-width: 150px;
         min-width: 150px;
         cursor: pointer;
-        
+        background-color: transparent;
+        margin-bottom: 20px;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: 0.5s;
+           
+        }
+
     }
 }
 
 .container {
     @include estilo-parrafo;
-}
+    background-image: url(/images/imagen-fondo.jpg);
+    background-size: cover;
+    padding: 10px;
+    font-weight: bold;
+    color:black;
+    
+   img {
+        width: 100%;
+        margin: 0;
+        opacity: 0.3;
+    }
+
+    }
+

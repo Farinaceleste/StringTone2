@@ -1,9 +1,9 @@
 .preguntas-frecuentes {
-    display:flex;
-   justify-content:center;
-   position: relative;
-   
-   
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
 }
 
 
@@ -13,15 +13,102 @@
     flex-wrap: wrap;
     width: 50%;
     margin-bottom: 40px;
-    
-}
-
-.card .procesocompra {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: center;
-    width: 30%;
-    margin: 5px;
 
 }
 
+
+.valoraciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+    .valoracion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .coment-box {
+        width: 500px;
+        background-color: white;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 3px 3px 25px black;
+
+        &:hover {
+            margin-top:12px;
+
+        }
+    }
+
+    .perfil {
+        display: flex;
+        align-items: center;
+    }
+
+    .perfil-imagen {
+        width: 70px;
+        height: 70px;
+        box-shadow: 2px 2px 30px black;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .nombre {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+        strong {
+            color: black;
+            font-size: 18px;
+            padding: 2px;
+
+        }
+
+        span {
+            color: gray;
+            margin-top: 2px;
+        }
+    }
+
+    .comentario {
+        p {
+            color: black;
+
+        }
+    }
+
+    .star {
+        display:flex;
+        flex-direction: row;
+
+        i{
+            color:rgb(217, 217, 0);
+        }
+
+    }
+
+}
