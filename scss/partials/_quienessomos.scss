@@ -1,0 +1,38 @@
+.info-nosotros {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    gap:20px;
+    padding: 45px;
+}
+
+.info {
+ 
+    padding: 20px;
+
+    .info i {
+        gap:10px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: start;
+        gap:15px;
+        font-size: smaller;
+
+        
+    }
+
+    iframe {
+        width: 50rem;
+    }
+
+}
+
+.QuienesSomos {
+    margin-top: 50px;
+    text-align: center;
+    font-size: smaller;
+}

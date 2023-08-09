@@ -1,0 +1,26 @@
+.preguntas-frecuentes {
+    display:flex;
+   justify-content:center;
+   position: relative;
+   
+}
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 70px;
+    
+}
+
+.card .procesocompra {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    width: 30%;
+    margin: 5px;
+
+}
+

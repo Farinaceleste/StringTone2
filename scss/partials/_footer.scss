@@ -1,0 +1,94 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #171718;
+    align-content: center;
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: whitesmoke;
+
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 25px;
+        gap: 25px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .whatsapp {
+       
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 75px;
+        color: black;
+        margin: 25px;
+
+
+
+        &:hover {
+            color: green;
+            transition: 0.5s;
+        }
+
+    }
+
+
+}
+
+
+/*REDES SOCIALES*/
+
+
+
+.redes {
+    cursor: pointer;
+    font-size: 51px;
+    margin: 2rem;
+    gap: 15px;
+    transition: .2s;
+}
+
+.redes i:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+    filter: none;
+    transition: 0.5s;
+}
+
+.container {
+    margin: 10px;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+.redes .fb:hover {
+    color: #181dc1;
+}
+
+.redes .tw:hover {
+    color: #0077b6;
+}
+
+.redes .ig:hover {
+    color: #ef476f;
+}
+
+.redes .pi:hover {
+    color: red;
+}
+
+.redes .li:hover {
+    color: #0077b6;
+}
+
+
+/*LOGO WHATSAPP*/

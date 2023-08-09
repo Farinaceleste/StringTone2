@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+}
+.header a {
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+  align-items: baseline;
+  font-size: medium;
+  gap: 7rem;
+  margin: 2rem;
+}
+.header .iconos-header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  gap: 2.5rem;
+  cursor: pointer;
+}
+.header img {
+  margin: 0;
+}
+.header input {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 10%;
+}
+.header .header2 {
+  display: flex;
+  background-color: rgb(199, 201, 197);
+  justify-content: center;
+  align-content: center;
+  color: red;
+  font-weight: bold;
+  padding: 2.5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #171718;
+  align-content: center;
+}
+.footer a {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer ul {
+  list-style: none;
+  margin-top: 25px;
+  gap: 25px;
+}
+.footer p {
+  text-align: center;
+}
+.footer .whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 75px;
+  color: black;
+  margin: 25px;
+}
+.footer .whatsapp:hover {
+  color: green;
+  transition: 0.5s;
+}
+
+/*REDES SOCIALES*/
+.redes {
+  cursor: pointer;
+  font-size: 51px;
+  margin: 2rem;
+  gap: 15px;
+  transition: 0.2s;
+}
+
+.redes i:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+  filter: none;
+  transition: 0.5s;
+}
+
+.container {
+  margin: 10px;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.redes .fb:hover {
+  color: #181dc1;
+}
+
+.redes .tw:hover {
+  color: #0077b6;
+}
+
+.redes .ig:hover {
+  color: #ef476f;
+}
+
+.redes .pi:hover {
+  color: red;
+}
+
+.redes .li:hover {
+  color: #0077b6;
+}
+
+/*LOGO WHATSAPP*/
+main {
+  background-color: grey;
+}
+
+.grilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 1.5px;
+}
+.grilla .guitarras {
+  margin: 20px;
+  max-width: 200px;
+  min-width: 200px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.grilla .guitarras img {
+  width: 200px;
+  border-style: groove;
+  box-shadow: 2;
+}
+
+.marcas {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.marcas img {
+  padding: 15px;
+  gap: 0.75rem;
+  max-width: 150px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.container .parrafo {
+  font-size: smaller;
+}
+
+.info-nosotros {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  gap: 20px;
+  padding: 45px;
+}
+
+.info {
+  padding: 20px;
+}
+.info .info i {
+  gap: 10px;
+}
+.info li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: start;
+  gap: 15px;
+  font-size: smaller;
+}
+.info iframe {
+  width: 50rem;
+}
+
+.QuienesSomos {
+  margin-top: 50px;
+  text-align: center;
+  font-size: smaller;
+}
+
+.cartitas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.card button i {
+  display: flex;
+  align-items: center;
+}
+.card i {
+  font-weight: bold;
+  padding: 10px;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+img .card-img-top {
+  padding: 5px;
+}
+
+nav .pagination {
+  color: grey;
+  padding: 3rem;
+}
+
+.body {
+  background-color: grey;
+}
+
+.contacto div {
+  align-items: center;
+  font-size: medium;
+  background-color: grey;
+  width: 30%;
+  margin-left: 25rem;
+  margin-bottom: 15px;
+}
+.contacto div label {
+  align-items: baseline;
+}
+
+.titulos {
+  font-size: x-large;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.preguntas-frecuentes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 70px;
+}
+
+.card .procesocompra {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  width: 30%;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 990px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 80%;
+  }
+  .mapa {
+    max-width: 75%;
+  }
+  .cartitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .header2 {
+    display: flex;
+    text-align: center;
+  }
+  .info-nosotros iframe {
+    display: none;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding-right: 15px;
+  }
+  .QuienesSomos {
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.025px;
+    margin: 25px;
+  }
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .marcas img {
+    width: 90px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_list li {
+    gap: 555px;
+  }
+  .mapa {
+    max-width: 75%;
+  }
+  .cartitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .header2 {
+    display: flex;
+    text-align: center;
+  }
+  .info-nosotros iframe {
+    display: none;
+  }
+  .info {
+    margin-left: 0.5px;
+  }
+  .info li {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    width: 75%;
+    margin: 0.5px;
+    align-content: center;
+    text-align: left;
+    position: static;
+  }
+  .QuienesSomos {
+    font-size: smaller;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navbar {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5px;
+  }
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .marcas img {
+    width: 70px;
+  }
+  .footer .redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 10px;
+  }
+  .footer_list li {
+    gap: 1.5px;
+  }
+  .mapa {
+    max-width: 75%;
+  }
+  .cartitas {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .header2 {
+    display: flex;
+    text-align: center;
+  }
+  .parrafo {
+    font-size: medium;
+  }
+  .info-nosotros iframe {
+    display: none;
+  }
+  .info li {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    width: 75%;
+    margin: 0;
+    flex-basis: auto;
+  }
+  .contacto {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    margin: 1.5px;
+  }
+}/*# sourceMappingURL=styles.css.map */

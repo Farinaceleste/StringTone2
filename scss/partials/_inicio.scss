@@ -1,0 +1,49 @@
+main {
+    background-color: grey;
+}
+
+.grilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 1.5px;
+
+    .guitarras {
+        margin: 20px;
+        max-width: 200px;
+        min-width: 200px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        img {
+            width: 200px;
+            border-style: groove;
+            box-shadow: 2;
+
+        }
+    }
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    img {
+
+        padding: 15px;
+        gap: 0.75rem;
+        max-width: 150px;
+        min-width: 150px;
+        cursor: pointer;
+    }
+}
+
+.container {
+    .parrafo {
+        font-size: smaller;
+    }
+}
+

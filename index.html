@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>StringTone</title>
     <link rel="shortcut icon" href="./images/pua.png" type="">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/scss/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -17,7 +17,7 @@
         <div class="header2">Envios gratis en compras superiores a $100.000 y 3 cuotas sin interés.</div>
         <nav class="navbar bg-dark navbar-expand-lg bg-body-" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
+
                 <img src="./images/logofinal.png" alt="Logo" width="130" height="130">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-l g-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/nosotros.html">Quienes somos</a>
@@ -45,17 +45,19 @@
                             <a class="nav-link" href="./pages/pregfrec.html">Preguntas frecuentes</a>
                         </li>
                     </ul>
-                    </li>
+                    <div class="iconos-header">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart"></i>
 
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 w-50" type="search" aria-label="Search">
-                        <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-                    </form>
+
+
+
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    </container>
     <main>
         <div class="carrusel">
             <div id="carouselExampleIndicators" class="carousel slide mx-auto p-2 w-75">
@@ -102,67 +104,53 @@
                 grabación y
                 microfonía líderes en el mercado.
 
-                <p class="parrafo"> Desde guitarras criollas para principiantes hasta micrófonos y amplificadores
-                    profesionales, la tienda de
-                    instrumentos musicales online StringTone dispone de una amplia gama de equipamiento musical. No
-                    importa
-                    si
-                    lo que buscas es un micrófono, un teclado musical, una batería electrónica o un bajo eléctrico,
-                    siempre
-                    te
-                    daremos asesoramiento en lo que necesites.
-                </p>
-                <p class="parrafo">
-                    Tenemos algunas de las marcas más populares en stock, tales como Fender, Roland, Casio, Marshall,
-                    Ibanez,
-                    Behringer y Shure, sin olvidar que somos distribuidores oficiales Yamaha para instrumentos musicales
-                    y
-                    audio
-                    en Argentina.
-                </p>
+                Desde guitarras criollas para principiantes hasta micrófonos y amplificadores
+                profesionales, la tienda de
+                instrumentos musicales online StringTone dispone de una amplia gama de equipamiento musical. No
+                importa
+                si
+                lo que buscas es un micrófono, un teclado musical, una batería electrónica o un bajo eléctrico,
+                siempre
+                te
+                daremos asesoramiento en lo que necesites.
 
+                Tenemos algunas de las marcas más populares en stock, tales como Fender, Roland, Casio, Marshall,
+                Ibanez,
+                Behringer y Shure, sin olvidar que somos distribuidores oficiales Yamaha para instrumentos musicales
+                y
+                audio
+                en Argentina.
             </div>
-            <hr>
-            <div class="titulos">Productos Recomendados</div>
-            <section class="grilla">
-                <div class="guitarras"><img src="./images/epiphoneguitar.jpg" alt=""></div>
-                <div class="guitarras"><img src="./images/ibanezguitar.webp" alt=""></div>
-                <div class="guitarras"><img src="./images/ltdguitar.jfif" alt=""></div>
-                <div class="guitarras"><img src="./images/epiphoneguitar2.jpg" alt=""></div>
-                <div class="guitarras"><img src="./images/ltdguitar2.jfif" alt=""></div>
-                <div class="guitarras"><img src="./images/epiphonenueva.webp" alt=""></div>
-            </section>
 
-            <hr>
+        </div>
+        <hr>
+        <div class="titulos">Productos Recomendados</div>
+        <section class="grilla">
+            <div class="guitarras"><img src="./images/epiphoneguitar.jpg" alt=""></div>
+            <div class="guitarras"><img src="./images/ibanezguitar.webp" alt=""></div>
+            <div class="guitarras"><img src="./images/ltdguitar.jfif" alt=""></div>
+            <div class="guitarras"><img src="./images/epiphoneguitar2.jpg" alt=""></div>
+            <div class="guitarras"><img src="./images/ltdguitar2.jfif" alt=""></div>
+            <div class="guitarras"><img src="./images/epiphonenueva.webp" alt=""></div>
+        </section>
 
-            <div class="titulos">Marcas</div>
-            <section class="marcas">
-                <img src="./images/logofender.png" alt="">
-                <img src="./images/epiphonelogo.png" alt="">
-                <img src="./images/jacksonlogo.png" alt="">
-                <img src="./images/ltdlogo.png" alt="">
-                <img src="./images/squierlogo.png" alt="">
-                <img src="./images/prslogo.png" alt="">
-                <img src="./images/yamahalogo.png" alt="">
-                <img src="./images/gibsonlogo.png" alt="">
-            </section>
+        <hr>
+
+        <div class="titulos">Marcas</div>
+        <section class="marcas">
+            <img src="./images/logofender.png" alt="">
+            <img src="./images/epiphonelogo.png" alt="">
+            <img src="./images/jacksonlogo.png" alt="">
+            <img src="./images/ltdlogo.png" alt="">
+            <img src="./images/squierlogo.png" alt="">
+            <img src="./images/prslogo.png" alt="">
+            <img src="./images/yamahalogo.png" alt="">
+            <img src="./images/gibsonlogo.png" alt="">
+        </section>
     </main>
 
     <footer class="footer">
-        <ul class="footer_list">
-            <div>
-                <li>(011)5490-5582</li>
-            </div>
-            <div>
-                <li>Av.Santa Fe 1589 (CABA) <a href="https://www.google.com/maps/"></a></li>
-            </div>
-            <div>
-                <li>ventas@stringtone.com <a href="https://mail.google.com/mail/"></a></li>
-            </div>
-            <div>
-                <li>Lun. a Vie. 10 a 18 hrs.</li>
-            </div>
-        </ul>
+
         <div class="redes">
             <i class="bi bi-facebook fb"></i>
             <i class="bi bi-twitter tw"></i>
@@ -172,24 +160,27 @@
         </div>
         <ul class="footer_list">
             <div>
-                <li>Cómo comprar.</li>
+                <li> <a href="./pages/form.html"> Contacto</a></li>
             </div>
             <div>
-                <li>Promociones bancarias. </a></li>
+                <li><a href="#"> Boton de arrepentimiento</a></li>
             </div>
             <div>
-                <li>Cambios y devoluciones. </li>
+                <li><a href="#"> Politicas de privacidad</a> </li>
             </div>
             <div>
-                <li>Defensa del Consumidor. </li>
+                <li><a href="#"> Cambios y devoluciones</a> </li>
             </div>
             <i class="bi bi-whatsapp whatsapp"></i>
-
+           
         </ul>
+         <hr>
+            <p>Copyright - Celeste Fariña</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

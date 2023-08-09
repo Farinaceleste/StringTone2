@@ -1,0 +1,9 @@
+$colorprincipal: grey;
+$colorsecundario: whitesmoke;
+
+
+@mixin estilo-titulos {
+    font-size: x-large;
+    text-align: center;
+    padding-top: 70px;
+}

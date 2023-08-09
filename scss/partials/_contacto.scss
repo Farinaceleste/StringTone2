@@ -1,0 +1,22 @@
+.body {
+    background-color: grey;
+}
+
+.contacto div {
+
+    align-items: center;
+    font-size: medium;
+    background-color: grey;
+    width: 30%;
+    margin-left: 25rem;
+    margin-bottom: 15px;
+
+label {
+    align-items: baseline;
+}
+
+
+}
+.titulos {
+    @include estilo-titulos;
+}

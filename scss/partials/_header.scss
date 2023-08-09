@@ -1,0 +1,55 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+
+
+    a {
+        justify-content: space-between;
+        gap: 30px;
+        padding: 15px;
+        align-items: baseline;
+        font-size: medium;
+        gap: 7rem;
+        margin: 2rem;
+
+    }
+
+
+    .iconos-header {
+        color:white;
+        display:flex;
+        flex-direction: row;
+        padding: 3rem;
+        gap:2.5rem;
+        cursor: pointer;
+       
+    }
+
+    img {
+        margin:0;
+    }
+
+    input {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            width: 10%;
+        }
+
+    
+
+    .header2 {
+        display: flex;
+        background-color: rgb(199, 201, 197);
+        justify-content: center;
+        align-content: center;
+        color: red;
+        font-weight: bold;
+        padding: 2.5px;
+    }
+
+}

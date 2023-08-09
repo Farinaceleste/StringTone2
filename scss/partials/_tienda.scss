@@ -1,0 +1,39 @@
+.cartitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    button i{
+        display: flex;
+        align-items: center;
+
+
+
+    }
+
+    i {
+        font-weight: bold;
+        padding:10px;
+        font-size:x-large;
+        cursor: pointer;
+
+    }
+}
+
+img .card-img-top {
+    padding: 5px;
+}
+
+nav {
+    .pagination {
+        color: grey;
+        padding: 3rem;
+    }
+
+}
