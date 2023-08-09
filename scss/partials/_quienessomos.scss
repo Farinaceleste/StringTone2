@@ -32,7 +32,5 @@
 }
 
 .QuienesSomos {
-    margin-top: 50px;
-    text-align: center;
-    font-size: smaller;
+    @include estilo-parrafo;
 }

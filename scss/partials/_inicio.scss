@@ -1,5 +1,47 @@
 main {
-    background-color: grey;
+    background-color: $colorprincipal;
+}
+
+.tarjetas-index {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    color: white;
+    width: 100%;
+    position: static;
+
+    img {
+
+        min-width: 250px;
+    }
+
+    .card-index {
+        background-color: black;
+        gap: 10px;
+        padding-bottom: 0.5rem;
+        width: 350px;
+
+    }
+
+    .texto {
+        text-align: justify;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    a {
+
+        margin: 15px;
+        font-weight: bold;
+
+        &:hover {
+            transition: 0.5s;
+            background-color: red;
+        }
+    }
+
 }
 
 .grilla {
@@ -9,6 +51,7 @@ main {
     width: auto;
     height: auto;
     gap: 1.5px;
+    overflow: hidden;
 
     .guitarras {
         margin: 20px;
@@ -19,8 +62,8 @@ main {
 
         img {
             width: 200px;
-            border-style: groove;
-            box-shadow: 2;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+           
 
         }
     }
@@ -30,6 +73,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    overflow: hidden;
 
     img {
 
@@ -38,12 +82,10 @@ main {
         max-width: 150px;
         min-width: 150px;
         cursor: pointer;
+        
     }
 }
 
 .container {
-    .parrafo {
-        font-size: smaller;
-    }
+    @include estilo-parrafo;
 }
-
