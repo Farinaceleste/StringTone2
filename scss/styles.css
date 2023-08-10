@@ -86,7 +86,9 @@
 /*REDES SOCIALES*/
 .redes {
   cursor: pointer;
-  font-size: 51px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
   margin: 2rem;
   gap: 15px;
   transition: 0.2s;
@@ -184,6 +186,7 @@ main {
   width: 200px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   padding: 3px;
+  max-width: 100%;
 }
 .grilla .guitarras img:hover {
   transform: scale(1.15);
@@ -219,15 +222,14 @@ main {
   justify-content: center;
   color: black;
   margin: 20px;
-  background-color: rgb(235, 235, 235);
-  gap: 10px;
+  background-color: gray;
+  width: 70%;
 }
 .portada img {
   width: 500px;
 }
 .portada .parrafo {
   padding: 15px;
-  position: relative;
 }
 
 main {
@@ -258,16 +260,34 @@ main {
   width: 100%;
 }
 .container2 .info-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
   padding: 15px;
 }
 .container2 .info-nosotros li {
   list-style: none;
   font-weight: bold;
-  gap: 5px;
+  gap: 15px;
   margin-right: 50px;
 }
-.container2 .info-nosotros .info iframe {
-  width: 350px;
+.container2 .info-nosotros li i {
+  padding: 15px;
+  cursor: pointer;
+}
+.container2 .info-nosotros .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .info-nosotros .info .mapa {
+  width: 50%;
+}
+.container2 .linea {
+  border: none;
+  height: 3px !important;
+  color: black;
 }
 
 .contenedor {
@@ -517,6 +537,9 @@ form button {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
   }
+  .nosotros-imagen {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   .portada {
@@ -591,6 +614,9 @@ form button {
   .valoraciones {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+  .nosotros-imagen {
+    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -671,5 +697,8 @@ form button {
   .valoraciones {
     grid-template-columns: 1fr;
     width: 100%;
+  }
+  .nosotros-imagen {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

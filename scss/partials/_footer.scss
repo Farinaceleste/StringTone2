@@ -51,7 +51,9 @@
 
 .redes {
     cursor: pointer;
-    font-size: 51px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
     margin: 2rem;
     gap: 15px;
     transition: .2s;

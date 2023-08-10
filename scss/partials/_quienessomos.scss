@@ -4,7 +4,11 @@ main {
 
 .QuienesSomos {
     @include estilo-parrafo;
+
+   
 }
+
+
 
 .container2 {
     display: grid;
@@ -14,7 +18,7 @@ main {
     gap: 10px;
 
 
-   
+
     .nosotros-imagen {
         display: flex;
         flex-direction: column;
@@ -28,23 +32,45 @@ main {
     }
 
     .info-nosotros {
-       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+
         padding: 15px;
 
         li {
             list-style: none;
             font-weight: bold;
-            gap: 5px;
+            gap: 15px;
             margin-right: 50px;
+           
+            i {
+                padding:15px;
+                cursor: pointer;
+            }
         }
 
-        .info {
+       
 
-            iframe {
-                width: 350px;
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+            .mapa {
+                width: 50%;
             }
         }
     }
+    .linea {
+        border: none;
+        height: 3px !important;
+        
+        color:black;
+       }
 
 
 }

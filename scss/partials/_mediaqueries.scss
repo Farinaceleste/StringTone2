@@ -83,6 +83,9 @@
         width: 100%;
 
     }
+    .nosotros-imagen {
+        display: none;
+    }
 
 }
 
@@ -191,6 +194,10 @@
     .valoraciones {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .nosotros-imagen {
+        display: none;
     }
 
 }
@@ -313,6 +320,10 @@
     .valoraciones {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    .nosotros-imagen {
+        display: none;
     }
 
 

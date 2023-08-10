@@ -64,6 +64,7 @@ main {
             width: 200px;
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
             padding:3px;
+            max-width: 100%;
 
             &:hover {
                 transform: scale(1.15);
@@ -108,8 +109,9 @@ main {
     justify-content: center;
     color:black;
     margin:20px;
-    background-color: rgb(235, 235, 235);
-    gap:10px;
+    background-color: gray;
+    width: 70%;
+
     
    img {
         width: 500px;
@@ -118,7 +120,7 @@ main {
 
     .parrafo {
         padding: 15px;
-        position: relative;
+        
     }
 
     }
