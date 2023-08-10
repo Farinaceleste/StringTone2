@@ -284,10 +284,83 @@ main {
 .container2 .info-nosotros .info .mapa {
   width: 50%;
 }
-.container2 .linea {
-  border: none;
-  height: 3px !important;
+
+.valoraciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.valoraciones .valoracion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.valoraciones .box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.valoraciones .coment-box {
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 3px 3px 25px black;
+}
+.valoraciones .coment-box:hover {
+  margin-top: 12px;
+}
+.valoraciones .perfil {
+  display: flex;
+  align-items: center;
+}
+.valoraciones .perfil-imagen {
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 30px black;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.valoraciones .perfil-imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.valoraciones .nombre {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.valoraciones .nombre strong {
   color: black;
+  font-size: 18px;
+  padding: 2px;
+}
+.valoraciones .nombre span {
+  color: gray;
+  margin-top: 2px;
+}
+.valoraciones .comentario p {
+  color: black;
+}
+.valoraciones .star {
+  display: flex;
+  flex-direction: row;
+}
+.valoraciones .star i {
+  color: rgb(217, 217, 0);
 }
 
 .contenedor {
@@ -408,82 +481,40 @@ form button {
   margin-bottom: 40px;
 }
 
-.valoraciones {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.valoraciones .valoracion {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.valoraciones .box-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.valoraciones .coment-box {
-  width: 500px;
-  background-color: white;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 3px 3px 25px black;
-}
-.valoraciones .coment-box:hover {
-  margin-top: 12px;
-}
-.valoraciones .perfil {
-  display: flex;
-  align-items: center;
-}
-.valoraciones .perfil-imagen {
-  width: 70px;
-  height: 70px;
-  box-shadow: 2px 2px 30px black;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.valoraciones .perfil-imagen img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-.valoraciones .nombre {
+.como-comprar {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.valoraciones .nombre strong {
-  color: black;
-  font-size: 18px;
-  padding: 2px;
-}
-.valoraciones .nombre span {
-  color: gray;
-  margin-top: 2px;
-}
-.valoraciones .comentario p {
-  color: black;
-}
-.valoraciones .star {
+.como-comprar .proceso-compra {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  gap: 20px;
+  padding: 30px;
 }
-.valoraciones .star i {
-  color: rgb(217, 217, 0);
+.como-comprar .proceso-compra .icono-proceso {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  font-size: 5rem;
+  font-weight: bolder;
+  width: 33%;
+  padding: 25px;
+  gap: 25px;
+  border-radius: 10px;
+}
+.como-comprar .proceso-compra .icono-proceso:hover {
+  box-shadow: 0 0 10px black;
+  scale: 1.05;
+}
+.como-comprar .proceso-compra .texto-proceso {
+  text-align: justify;
+  font-size: medium;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 990px) {
@@ -539,6 +570,9 @@ form button {
   }
   .nosotros-imagen {
     display: none;
+  }
+  .como-comprar {
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -617,6 +651,9 @@ form button {
   }
   .nosotros-imagen {
     display: none;
+  }
+  .como-comprar {
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -700,5 +737,8 @@ form button {
   }
   .nosotros-imagen {
     display: none;
+  }
+  .como-comprar {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */
