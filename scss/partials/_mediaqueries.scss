@@ -1,15 +1,42 @@
+@media only screen and (max-width: 1200px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 990px) {
+    .portada {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+
+    }
+
     .grilla {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        flex-wrap: wrap;
         align-items: center;
     }
 
     .marcas {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        flex-wrap: wrap;
         align-items: center;
-        width: 80%;
+        width: 100%;
     }
 
 
@@ -51,17 +78,25 @@
     }
 
 
-    .contenedor{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+
     }
-
-
 
 }
 
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 768px) {
+    .portada {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
     .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -71,7 +106,7 @@
 
     .marcas {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
 
         img {
@@ -140,16 +175,39 @@
     }
 
 
-    .contenedor{
-        display: grid;
+    .contenedor {
+
+        .contenedor-item {
+
+            .items {
+
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .valoraciones {
         grid-template-columns: 1fr;
-    
+        width: 100%;
+    }
 
 }
 
-}
+@media only screen and (max-width: 576px) {
+    .portada {
+        flex-direction: column;
 
-@media only screen and (max-width: 400px) {
+        img {
+            width: 100%;
+        }
+
+
+    }
+
+
+
     .navbar {
 
         display: flex;
@@ -162,14 +220,16 @@
 
     .grilla {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1.5px;
+        width: 100%;
     }
 
     .marcas {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
+        width: 100%;
 
 
         img {
@@ -241,14 +301,19 @@
     }
 
 
-    .contenedor {
-        display: grid;
-        grid-template-columns: 1fr ;
-       
+    .contenedor-item {
+
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+
     }
 
-
-
+    
+    .valoraciones {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 
 
 }

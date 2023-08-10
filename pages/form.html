@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../images/pua.png" type="">
     <link rel="stylesheet" href="/scss/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -58,7 +58,8 @@
     <main class="main">
         <div class="titulos">Contáctate con nosotros.</div>
 
-        <form class="formulario-usuario">
+        <form>
+            <div class="formulario-usuario">
             <div class="mb-3 item-usuario">
               <label for="exampleInputEmail1" class="form-label">Ingrese su mail</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -72,17 +73,15 @@
               <input type="checkbox" class="form-check-input item-usuario" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Recordar</label>
             </div>
-            <button type="submit" class="btn btn-primary item-usuario">Acceder</button>
+            <button type="submit" class="btn btn-secondary item-usuario">Acceder</button>
           </form>
           <div class="formulario-consulta">
 
           <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre completo" aria-label="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Localidad</label>
@@ -98,9 +97,9 @@
             </div>
           <div class="mb-3 ">
             <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control text-area w-50 p-3" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea class="form-control text-area w-100 p-3" id="exampleFormControlTextarea1" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-secondary">Enviar</button>
         </div>
 
     </main>

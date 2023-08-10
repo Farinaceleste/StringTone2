@@ -2,19 +2,27 @@
     background-color: grey;
 }
 
-.formulario-consulta{
-   @include estilo-formulario;
-  
 
-  
+form{
+    @include estilo-formulario;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    button {
+        margin-bottom:15px;
+    }
+}
+
+.formulario-consulta {
+    width: 100%;
     
 }
 
 .formulario-usuario {
-    @include estilo-formulario;
-    
+    width:30%;
 }
-
 
 
 .titulos {

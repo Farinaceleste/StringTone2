@@ -183,6 +183,7 @@ main {
 .grilla .guitarras img {
   width: 200px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  padding: 3px;
 }
 .grilla .guitarras img:hover {
   transform: scale(1.15);
@@ -209,19 +210,24 @@ main {
   transition: 0.5s;
 }
 
-.container {
+.portada {
   font-size: large;
   text-align: justify;
-  background-image: url(/images/imagen-fondo.jpg);
-  background-size: cover;
-  padding: 10px;
-  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   color: black;
+  margin: 20px;
+  background-color: rgb(235, 235, 235);
+  gap: 10px;
 }
-.container img {
-  width: 100%;
-  margin: 0;
-  opacity: 0.3;
+.portada img {
+  width: 500px;
+}
+.portada .parrafo {
+  padding: 15px;
+  position: relative;
 }
 
 main {
@@ -337,20 +343,27 @@ nav .pagination {
   background-color: grey;
 }
 
-.formulario-consulta {
+form {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   padding: 10px;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+form button {
+  margin-bottom: 15px;
+}
+
+.formulario-consulta {
+  width: 100%;
 }
 
 .formulario-usuario {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  padding: 10px;
-  width: 50%;
+  width: 30%;
 }
 
 .titulos {
@@ -454,16 +467,24 @@ nav .pagination {
 }
 
 @media only screen and (max-width: 990px) {
+  .portada {
+    flex-direction: column;
+  }
+  .portada img {
+    width: 100%;
+  }
   .grilla {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     align-items: center;
   }
   .marcas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
   .mapa {
     max-width: 75%;
@@ -493,11 +514,17 @@ nav .pagination {
     grid-template-columns: 1fr;
   }
   .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
   }
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 768px) {
+  .portada {
+    flex-direction: column;
+  }
+  .portada img {
+    width: 100%;
+  }
   .grilla {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -506,7 +533,7 @@ nav .pagination {
   }
   .marcas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
   .marcas img {
@@ -557,12 +584,22 @@ nav .pagination {
   .tarjetas-index {
     grid-template-columns: 1fr;
   }
-  .contenedor {
-    display: grid;
+  .contenedor .contenedor-item .items {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .valoraciones {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
+  .portada {
+    flex-direction: column;
+  }
+  .portada img {
+    width: 100%;
+  }
   .navbar {
     display: flex;
     align-items: space-between;
@@ -571,13 +608,15 @@ nav .pagination {
   }
   .grilla {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5px;
+    width: 100%;
   }
   .marcas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    width: 100%;
   }
   .marcas img {
     width: 70px;
@@ -625,8 +664,12 @@ nav .pagination {
   .tarjetas-index {
     grid-template-columns: 1fr;
   }
-  .contenedor {
-    display: grid;
+  .contenedor-item {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .valoraciones {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
