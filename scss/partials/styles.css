@@ -165,6 +165,17 @@ main {
   transition: 0.5s;
   background-color: red;
 }
+@media screen and (max-width: 768px) {
+  .tarjetas-index {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tarjetas-index {
+    flex-direction: column;
+    width: 80%;
+  }
+}
 
 .grilla {
   display: flex;
@@ -192,6 +203,19 @@ main {
   transform: scale(1.15);
   transition: 0.5s;
 }
+@media screen and (max-width: 768px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: x-small;
+  }
+}
 
 .marcas {
   display: flex;
@@ -211,6 +235,21 @@ main {
 .marcas img:hover {
   transform: scale(1.15);
   transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: x-small;
+    align-items: center;
+  }
 }
 
 .portada {
@@ -259,29 +298,29 @@ main {
 .container2 .nosotros-imagen img {
   width: 100%;
 }
-.container2 .info-nosotros {
+.container2 .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .info .info-nosotros {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: justify;
   padding: 15px;
 }
-.container2 .info-nosotros li {
+.container2 .info .info-nosotros li {
   list-style: none;
   font-weight: bold;
   gap: 15px;
   margin-right: 50px;
 }
-.container2 .info-nosotros li i {
+.container2 .info .info-nosotros li i {
   padding: 15px;
   cursor: pointer;
 }
-.container2 .info-nosotros .info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container2 .info-nosotros .info .mapa {
+.container2 .info .info-nosotros .mapa {
   width: 50%;
 }
 
@@ -515,230 +554,4 @@ form button {
   text-align: justify;
   font-size: medium;
   font-weight: bold;
-}
-
-@media only screen and (max-width: 990px) {
-  .portada {
-    flex-direction: column;
-  }
-  .portada img {
-    width: 100%;
-  }
-  .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .marcas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-  }
-  .mapa {
-    max-width: 75%;
-  }
-  .cartitas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-  }
-  .header2 {
-    display: flex;
-    text-align: center;
-  }
-  .info-nosotros iframe {
-    display: none;
-  }
-  .info {
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-    padding-right: 15px;
-  }
-  .QuienesSomos {
-    font-size: large;
-  }
-  .tarjetas-index {
-    grid-template-columns: 1fr;
-  }
-  .contenedor {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-  }
-  .nosotros-imagen {
-    display: none;
-  }
-  .como-comprar {
-    flex-direction: row;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .portada {
-    flex-direction: column;
-  }
-  .portada img {
-    width: 100%;
-  }
-  .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.025px;
-    margin: 25px;
-  }
-  .marcas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-  .marcas img {
-    width: 90px;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer_list {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer_list li {
-    gap: 555px;
-  }
-  .mapa {
-    max-width: 75%;
-  }
-  .cartitas {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-  .header2 {
-    display: flex;
-    text-align: center;
-  }
-  .info-nosotros iframe {
-    display: none;
-  }
-  .info {
-    margin-left: 0.5px;
-  }
-  .info li {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-    width: 75%;
-    margin: 0.5px;
-    align-content: center;
-    text-align: left;
-    position: static;
-  }
-  .QuienesSomos {
-    font-size: smaller;
-  }
-  .tarjetas-index {
-    grid-template-columns: 1fr;
-  }
-  .contenedor .contenedor-item .items {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-  }
-  .valoraciones {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .nosotros-imagen {
-    display: none;
-  }
-  .como-comprar {
-    flex-direction: row;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .portada {
-    flex-direction: column;
-  }
-  .portada img {
-    width: 100%;
-  }
-  .navbar {
-    display: flex;
-    align-items: space-between;
-    justify-content: center;
-    margin-left: 10px;
-  }
-  .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5px;
-    width: 100%;
-  }
-  .marcas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 100%;
-  }
-  .marcas img {
-    width: 70px;
-  }
-  .footer .redes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 10px;
-  }
-  .footer_list li {
-    gap: 1.5px;
-  }
-  .mapa {
-    max-width: 75%;
-  }
-  .cartitas {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-  .header2 {
-    display: flex;
-    text-align: center;
-  }
-  .parrafo {
-    font-size: medium;
-  }
-  .info-nosotros iframe {
-    display: none;
-  }
-  .info li {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-    width: 75%;
-    margin: 0;
-    flex-basis: auto;
-  }
-  .contacto {
-    display: flex;
-    width: 50%;
-    height: 50vh;
-    margin: 1.5px;
-  }
-  .tarjetas-index {
-    grid-template-columns: 1fr;
-  }
-  .contenedor-item {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-  }
-  .valoraciones {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .nosotros-imagen {
-    display: none;
-  }
-  .como-comprar {
-    flex-direction: row;
-  }
 }/*# sourceMappingURL=styles.css.map */

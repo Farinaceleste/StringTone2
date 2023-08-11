@@ -22,7 +22,6 @@ main {
         gap: 10px;
         padding-bottom: 0.5rem;
         width: 350px;
-
     }
 
     .texto {
@@ -32,7 +31,6 @@ main {
     }
 
     a {
-
         margin: 15px;
         font-weight: bold;
 
@@ -42,6 +40,14 @@ main {
         }
     }
 
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        width: 80%;
+    }
 }
 
 .grilla {
@@ -70,9 +76,18 @@ main {
                 transform: scale(1.15);
                 transition: 0.5s;
             }
-
-      
         }
+    }
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: x-small;
     }
 }
 
@@ -81,7 +96,7 @@ main {
     justify-content: center;
     flex-direction: row;
     overflow: hidden;
-
+    
     img {
 
         padding: 15px;
@@ -97,7 +112,19 @@ main {
             transition: 0.5s;
            
         }
+    }
 
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: x-small;
+        align-items: center;
     }
 }
 
@@ -112,15 +139,12 @@ main {
     background-color: gray;
     width: 70%;
 
-    
    img {
-        width: 500px;
-    
+        width: 500px;    
     }
 
     .parrafo {
-        padding: 15px;
-        
+        padding: 15px;        
     }
 
     }
