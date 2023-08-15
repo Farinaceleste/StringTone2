@@ -340,7 +340,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.4;
+  opacity: 0.7;
   position: relative;
   width: 100%;
 }
@@ -364,9 +364,9 @@ main {
 }
 .portada .parrafo {
   display: flex;
-  text-align: justify;
-  margin: 20px;
-  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 40px;
   font-size: x-large;
 }
 @media screen and (max-width: 990px) {
