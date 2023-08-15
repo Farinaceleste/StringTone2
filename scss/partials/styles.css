@@ -193,14 +193,17 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
   color: white;
-  width: 80%;
+  width: 70%;
+  margin: auto;
 }
 @media screen and (max-width: 768px) {
   .tarjetas-index {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 80%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -214,7 +217,7 @@ main {
   width: 100%;
 }
 .tarjetas-index .card-body {
-  max-width: 50%;
+  max-width: 100%;
   justify-content: center;
 }
 .tarjetas-index .card-index {
@@ -326,41 +329,41 @@ main {
 @media screen and (max-width: 576px) {
   .marcas {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: 5px;
     justify-content: center;
   }
 }
 
-.portada {
-  display: grid;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.portada .imagen-portada img {
+.portada img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  width: 70%;
+  opacity: 0.4;
+  position: relative;
+  width: 100%;
 }
 @media screen and (max-width: 990px) {
-  .portada .imagen-portada img {
-    width: 80%;
+  .portada img {
+    width: 90%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  .portada .imagen-portada img {
-    width: 80%;
+  .portada img {
+    width: 90%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 576px) {
-  .portada .imagen-portada img {
-    width: 80%;
+  .portada img {
+    width: 90%;
+    margin: auto;
   }
 }
 .portada .parrafo {
+  display: flex;
   text-align: justify;
   margin: 20px;
   font-weight: bold;
@@ -368,7 +371,7 @@ main {
 }
 @media screen and (max-width: 990px) {
   .portada .parrafo {
-    width: 80%;
+    width: 100%;
     font-size: large;
   }
 }
@@ -376,12 +379,14 @@ main {
   .portada .parrafo {
     width: 80%;
     font-size: medium;
+    margin: auto;
   }
 }
 @media screen and (max-width: 576px) {
   .portada .parrafo {
     width: 80%;
     font-size: small;
+    margin: auto;
   }
 }
 
@@ -462,7 +467,6 @@ main {
   justify-content: center;
   text-align: justify;
   padding: 15px;
-  margin-left: 5px;
 }
 .container2 .info .info-nosotros ul {
   list-style: none;

@@ -7,14 +7,18 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
     color: white;
-    width: 80%;
+    width: 70%;
+    margin:auto;
 
 
     @include tablet {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 80%;
+       
     }
 
     @include mobile {
@@ -25,10 +29,13 @@ main {
 
     img {
         width: 100%;
+      
+
+        
     }
 
     .card-body {
-        max-width: 50%;
+        max-width: 100%;
         justify-content: center;
 
     }
@@ -156,60 +163,68 @@ main {
 
     @include mobile {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         margin: 5px;
-        justify-content: center
+        justify-content: center;
     }
 }
 
 .portada {
-    display: grid;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+   
+    
 
-    .imagen-portada img{
+    img{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
-        width: 70%;
+        opacity: 0.4;
+        position: relative;
+        width: 100%;
 
         @include desktop {
-            width: 80%;
+            width: 90%;
+            margin:auto;
         }
 
         @include tablet {
-            width: 80%;   
+            width: 90%; 
+            margin:auto; 
         }
 
         @include mobile {
-            width: 80%;  
+            width: 90%; 
+            margin:auto; 
         }
     }
 
 
     .parrafo {
 
+    
+        
+        display: flex;
         text-align: justify;
         margin: 20px;
         font-weight: bold;
         font-size: x-large;
 
         @include desktop {
-            width: 80%;
+            width: 100%;
             font-size: large;
         }
 
         @include tablet {
             width: 80%;
             font-size: medium;
+            margin:auto;
             
         }
 
         @include mobile {
             width: 80%;
             font-size: small;
+            margin:auto;
            
         }
 
