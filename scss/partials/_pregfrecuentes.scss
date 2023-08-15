@@ -14,73 +14,119 @@
     width: 50%;
     margin-bottom: 40px;
 
+    @include tablet {
+        width: 80%;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
+
 }
 
 
 .como-comprar {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+    flex-wrap: wrap;
+
+
 
 
     .proceso-compra {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin:15px;
-        gap:20px;
-        padding:30px;
-       
-        
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 20px;
+        padding: 30px;
+
+
 
         .icono-proceso {
             display: flex;
             align-items: center;
+            
+            justify-content: space-between;
             background-color: whitesmoke;
             font-size: 5rem;
             font-weight: bolder;
             width: 33%;
-            padding:25px;
-            gap:25px;
+            padding: 25px;
+            gap: 25px;
             border-radius: 10px;
 
             &:hover {
-                box-shadow: 0 0 10px black;
+                box-shadow: 0 0 10px rgb(32, 77, 201);
                 scale: 1.05;
             }
+
+            @include desktop {
+                display:flex;
+                flex-direction: column;
+            }
+
+            @include tablet {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                font-size: 3rem;
+                width: 60%;
+
+            }
+
+            @include mobile {
+                display: grid;
+                grid-template-columns: 1fr;
+                font-size: 3rem;
+                width: 80%;
+            }
+
+
+
+            i {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        
+
         }
 
         .texto-proceso {
             text-align: justify;
             font-size: medium;
             font-weight: bold;
-        } 
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

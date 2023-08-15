@@ -3,31 +3,62 @@ main {
 }
 
 .tarjetas-index {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     justify-content: center;
-    margin-top: 15px;
+    padding: 20px;
     color: white;
-    width: 100%;
-    position: static;
+    width: 80%;
+
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 
     img {
+        width: 100%;
+    }
 
-        min-width: 250px;
+    .card-body {
+        max-width: 50%;
+        justify-content: center;
+
     }
 
     .card-index {
         background-color: black;
         gap: 10px;
         padding-bottom: 0.5rem;
-        width: 350px;
     }
 
     .texto {
+        display: flex;
         text-align: justify;
         padding: 15px;
         font-weight: bold;
+        width: 100%;
+
+        @include tablet {
+            width: 100%;
+            text-align: justify;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        @include mobile {
+            width: 100%;
+            text-align: justify;
+            padding: 5px;
+            margin: 5px;
+        }
     }
 
     a {
@@ -40,27 +71,20 @@ main {
         }
     }
 
-    @include tablet {
-        flex-direction: column;
-    }
-
-    @include mobile {
-        flex-direction: column;
-        width: 80%;
-    }
 }
 
 .grilla {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: auto;
     height: auto;
     gap: 1.5px;
-    overflow: hidden;
+
 
     .guitarras {
-        margin: 20px;
+        margin: auto;
         max-width: 200px;
         min-width: 200px;
         box-sizing: border-box;
@@ -69,83 +93,133 @@ main {
         img {
             width: 200px;
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            padding:3px;
+            padding: 5px;
             max-width: 100%;
 
+
             &:hover {
-                transform: scale(1.15);
-                transition: 0.5s;
+                border-color: black;
+
             }
         }
     }
 
     @include tablet {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     @include mobile {
         display: grid;
         grid-template-columns: 1fr 1fr;
         font-size: x-small;
+        margin: auto;
+
     }
 }
 
 .marcas {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     overflow: hidden;
-    
+    flex-wrap: wrap;
+
     img {
 
-        padding: 15px;
+        padding: 5px;
         gap: 0.75rem;
         max-width: 150px;
         min-width: 150px;
         cursor: pointer;
         background-color: transparent;
         margin-bottom: 20px;
+        justify-content: center;
 
         &:hover {
             transform: scale(1.15);
             transition: 0.5s;
-           
+
         }
+
     }
 
     @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+
         align-items: center;
+        margin: 5px;
+        justify-content: center;
+
     }
 
     @include mobile {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        font-size: x-small;
         align-items: center;
+        margin: 5px;
+        justify-content: center
     }
 }
 
 .portada {
-    @include estilo-parrafo;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    color:black;
-    margin:20px;
-    background-color: gray;
-    width: 70%;
+    justify-content: space-between;
 
-   img {
-        width: 500px;    
+    .imagen-portada img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        width: 70%;
+
+        @include desktop {
+            width: 80%;
+        }
+
+        @include tablet {
+            width: 80%;   
+        }
+
+        @include mobile {
+            width: 80%;  
+        }
     }
+
 
     .parrafo {
-        padding: 15px;        
-    }
+
+        text-align: justify;
+        margin: 20px;
+        font-weight: bold;
+        font-size: x-large;
+
+        @include desktop {
+            width: 80%;
+            font-size: large;
+        }
+
+        @include tablet {
+            width: 80%;
+            font-size: medium;
+            
+        }
+
+        @include mobile {
+            width: 80%;
+            font-size: small;
+           
+        }
+
+
+
+
 
     }
 
+
+
+
+}

@@ -3,28 +3,54 @@
 }
 
 
-form{
+form {
     @include estilo-formulario;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
-    button {
-        margin-bottom:15px;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 100%;
     }
 }
 
-.formulario-consulta {
-    width: 100%;
-    
+    button {
+        margin-bottom: 15px;
+
+
+        .formulario-consulta {
+            width: 100%;
+           
+    }
 }
 
 .formulario-usuario {
-    width:30%;
+    min-width: 50%;
+
+
+@include mobile {
+    min-width: 60%;
 }
 
+@include tablet {
+    min-width: 60%;
+}
+
+}
 
 .titulos {
     @include estilo-titulos;
+
+    @include mobile {
+        font-weight: lighter;
+    }
+
+    @include tablet {
+        font-weight: lighter;
+    }
 }

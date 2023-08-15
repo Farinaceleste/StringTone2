@@ -13,6 +13,7 @@ $colorsecundario: whitesmoke;
 @mixin estilo-parrafo {
     font-size: large;
     text-align: justify;
+    width: 100%;
 }
 
 @mixin estilo-formulario {

@@ -2,10 +2,24 @@ main {
     width: 100%;
 }
 
+.mapa {
+    width: 70%
+}
+
 .QuienesSomos {
     @include estilo-parrafo;
 
-   
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 .container2 {
@@ -14,6 +28,16 @@ main {
     grid-template-columns: 1fr 1fr;
     margin: 50px;
     gap: 10px;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 
 
@@ -26,42 +50,53 @@ main {
 
         img {
             width: 100%;
+
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
         }
+
+
     }
+
     .info {
         display: flex;
         align-items: center;
         justify-content: center;
-        
 
-    .info-nosotros {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: justify;
 
-        padding: 15px;
 
-        li {
-            list-style: none;
-            font-weight: bold;
-            gap: 15px;
-            margin-right: 50px;
-           
-            i {
-                padding:15px;
-                cursor: pointer;
+        .info-nosotros {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            padding: 15px;
+            margin-left:5px;
+
+            ul {
+                list-style: none;
+                
+                li {
+                    font-weight: bold;
+                    gap: 15px;
+                    margin-right: 50px;
+                    margin-top: 20px;
+
+                }
+
+                i {
+                    padding: 15px;
+                    cursor: pointer;
+                }
             }
-        }
-
-       
-
-        
-
-
 
             .mapa {
-                width: 50%;
+                width: 70%;
             }
         }
     }
@@ -74,8 +109,15 @@ main {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
 
     .valoracion {
         display: flex;
@@ -83,6 +125,7 @@ main {
         justify-content: center;
         align-items: center;
         width: 100%;
+
     }
 
     .box-top {
@@ -90,21 +133,39 @@ main {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        @include desktop {
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 
     .coment-box {
-        width: 500px;
+        max-width: 500px;
         background-color: white;
-        padding: 20px;
+        padding: 10px;
         margin: 15px;
         border-radius: 8px;
         cursor: pointer;
         box-shadow: 3px 3px 25px black;
 
         &:hover {
-            margin-top:12px;
+            margin-top: 12px;
 
         }
+
+
     }
 
     .perfil {
@@ -154,13 +215,109 @@ main {
     }
 
     .star {
-        display:flex;
+        display: flex;
         flex-direction: row;
 
-        i{
-            color:rgb(217, 217, 0);
+        i {
+            color: rgb(217, 217, 0);
+        }
+
+
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .valoracion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .coment-box {
+        background-color: white;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 3px 3px 25px black;
+
+        &:hover {
+            margin-top: 12px;
+
+        }
+
+
+    }
+
+    .perfil {
+        display: flex;
+        align-items: center;
+    }
+
+    .perfil-imagen {
+        width: 70px;
+        height: 70px;
+        box-shadow: 2px 2px 30px black;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .nombre {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+        strong {
+            color: black;
+            font-size: 18px;
+            padding: 2px;
+
+        }
+
+        span {
+            color: gray;
+            margin-top: 2px;
+        }
+    }
+
+    .comentario {
+        p {
+            color: black;
+
+        }
+    }
+
+    .star {
+        display: flex;
+        flex-direction: row;
+
+        i {
+            color: rgb(217, 217, 0);
         }
 
     }
+
+
 
 }

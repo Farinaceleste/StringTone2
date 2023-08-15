@@ -6,6 +6,17 @@
     z-index: 6;
     width: 100%;
 
+    @include tablet {
+        width: 100%;
+
+       
+    }
+
+    @include mobile {
+        width: 100%;
+        
+    }
+
 
     a {
         justify-content: space-between;
@@ -50,6 +61,18 @@
         color: red;
         font-weight: bold;
         padding: 2.5px;
+
+
+        @include mobile {
+            
+            text-align: center;
+            padding:3px;
+        }
+
+        @include tablet {
+           
+            text-align: center;
+        }
     }
 
 }

@@ -4,6 +4,8 @@
     background-color: #171718;
     align-content: center;
 
+
+
     a {
         list-style: none;
         text-decoration: none;
@@ -15,10 +17,41 @@
         list-style: none;
         margin-top: 25px;
         gap: 25px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;;
+            gap:2.5px;
+            
+        }
+
+        @include tablet {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:2.5px;
+            margin-right: 5px;
+           
+
     }
 
     p {
         text-align: center;
+    }
+
+    @include mobile {
+        max-width: 100%;
+        
+    }
+
+    @include tablet {
+        
+        max-width: 100%;
     }
 
     .whatsapp {
@@ -31,8 +64,6 @@
         color: black;
         margin: 25px;
         background-color: transparent;
-
-
 
         &:hover {
             color: green;
@@ -53,6 +84,19 @@
     margin: 2rem;
     gap: 15px;
     transition: .2s;
+
+    
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
 }
 
 .redes i:hover {
@@ -89,5 +133,5 @@
     color: #0077b6;
 }
 
-
+ }
 /*LOGO WHATSAPP*/
