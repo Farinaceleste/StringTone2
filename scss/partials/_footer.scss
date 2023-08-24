@@ -1,137 +1,129 @@
 .footer {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #171718;
     align-content: center;
 
+    img {
 
+        width: 200px;
+        max-width: 200px;
+        overflow: hidden;
+        background-color: white;
+        padding: 5px;
+        margin: 15px;
+
+    }
 
     a {
         list-style: none;
         text-decoration: none;
         color: whitesmoke;
-
     }
 
     ul {
         list-style: none;
         margin-top: 25px;
-        gap: 25px;
+        gap: 30px;
+        padding: 30px;
+
+        .whatsapp {
+
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+            font-size: 75px;
+            color: green;
+            margin: 25px;
+            background-color: transparent;
+
+            &:hover {
+                color: black;
+                transition: 0.5s;
+            }
+        }
+
+        hr {
+            height: 3px;
+            background-color: white;
+        }
+
+        h6 {
+            color: $colorsecundario;
+            font-weight: bold;
+        }
+    }
+
+    /*REDES SOCIALES*/
+
+    .redes {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin: 2rem;
+        gap: 15px;
+        transition: .2s;
+        color: #2d2d33a8;
+
+        .fb:hover {
+            color: #181dc1;
+        }
+
+        .tw:hover {
+            color: #0077b6;
+        }
+
+        .ig:hover {
+            color: #ef476f;
+        }
+
+        .pi:hover {
+            color: red;
+        }
+
+        .li:hover {
+            color: #0077b6;
+        }
+
+
 
         @include mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-right: 5px;;
-            gap:2.5px;
-            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
 
         @include tablet {
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap:2.5px;
-            margin-right: 5px;
-           
-
-    }
-
-    p {
-        text-align: center;
-    }
-
-    @include mobile {
-        max-width: 100%;
-        
-    }
-
-    @include tablet {
-        
-        max-width: 100%;
-    }
-
-    .whatsapp {
-       
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        cursor: pointer;
-        font-size: 75px;
-        color: black;
-        margin: 25px;
-        background-color: transparent;
-
-        &:hover {
-            color: green;
-            transition: 0.5s;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
     }
-}
 
-
-/*REDES SOCIALES*/
-
-
-.redes {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    margin: 2rem;
-    gap: 15px;
-    transition: .2s;
-
-    
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .redes i:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
+        filter: none;
+        transition: 0.5s;
     }
 
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
+    .container {
+        margin: 10px;
+        font-size: 1.5rem;
+        display: block;
+        text-align: center;
     }
 }
 
-.redes i:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .2);
-    filter: none;
-    transition: 0.5s;
-}
-
-.container {
-    margin: 10px;
-    font-size: 1.5rem;
-    display: block;
+.desarrollado {
+    padding: 2px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
     text-align: center;
-}
+    text-decoration: none;
 
-.redes .fb:hover {
-    color: #181dc1;
 }
-
-.redes .tw:hover {
-    color: #0077b6;
-}
-
-.redes .ig:hover {
-    color: #ef476f;
-}
-
-.redes .pi:hover {
-    color: red;
-}
-
-.redes .li:hover {
-    color: #0077b6;
-}
-
- }
-/*LOGO WHATSAPP*/

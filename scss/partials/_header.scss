@@ -1,78 +1,75 @@
 .header {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+   
     position: sticky;
     top: 0;
     z-index: 6;
-    width: 100%;
-
-    @include tablet {
-        width: 100%;
-
-       
-    }
-
-    @include mobile {
-        width: 100%;
-        
-    }
-
-
-    a {
-        justify-content: space-between;
-        gap: 30px;
-        padding: 15px;
-        align-items: baseline;
-        font-size: medium;
-        gap: 7rem;
-        margin: 2rem;
-
-    }
-
-
-    .iconos-header {
-        color:white;
-        display:flex;
-        flex-direction: row;
-        padding: 3rem;
-        gap:2.5rem;
-        cursor: pointer;
-       
-    }
+    display: inline;
 
     img {
-        margin:0;
+        max-width: 200px;
+        overflow: hidden;
+        background-color: white;
     }
 
-    input {
-            display: flex;
-            justify-content: end;
-            align-items: end;
-            width: 10%;
-        }
-
+   ul {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px;
+    gap:40px;
     
+   }
+
+
+
 
     .header2 {
         display: flex;
-        background-color: rgb(199, 201, 197);
+        background-color: black;
         justify-content: center;
         align-content: center;
-        color: red;
+        color: whitesmoke;
         font-weight: bold;
         padding: 2.5px;
 
 
         @include mobile {
-            
+            width: 100%;
             text-align: center;
-            padding:3px;
+            padding: 3px;
         }
 
         @include tablet {
-           
+            width: 100%;
             text-align: center;
         }
     }
 
+
+
+    .iconos-header {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 2.5rem;
+        cursor: pointer;
+        padding: 2.5px;
+
+        @include desktop {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+    }
 }

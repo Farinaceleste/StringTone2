@@ -1,24 +1,97 @@
-main {
-    background-color: $colorprincipal;
+.portada {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+
+
+    img {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        /*
+        transform:translate(-50%,-50%); 
+        */
+
+
+        @include desktop {
+            width: 100%;
+            padding: auto;
+
+        }
+
+        @include tablet {
+            width: 100%;
+            padding: auto;
+
+        }
+
+        @include mobile {
+            width: 90%;
+
+            margin-top: 10px;
+        }
+    }
+
+    .parrafo {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 40px;
+        font-size: x-large;
+        background-color: white;
+        margin: 20px;
+
+        @include desktop {
+            width: 100%;
+            font-size: large;
+        }
+
+        @include tablet {
+            width: 80%;
+            font-size: medium;
+            margin: auto;
+
+        }
+
+        @include mobile {
+            width: 80%;
+            font-size: small;
+            margin: auto;
+
+        }
+    }
 }
+
+
 
 .tarjetas-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
-    color: white;
-    width: 70%;
-    margin:auto;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    background-color: black;
+    gap: 15px;
+    justify-content: center;
+    justify-items: center;
+
 
 
     @include tablet {
         display: grid;
-        grid-template-columns: 1fr;
-        width: 80%;
-       
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
     }
 
     @include mobile {
@@ -32,15 +105,20 @@ main {
     }
 
     .card-body {
-        max-width: 100%;
-        justify-content: center;
+        width: 100%;
+        justify-content: end;
+
 
     }
 
     .card-index {
-        background-color: black;
-        gap: 10px;
-        padding-bottom: 0.5rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        width: 80%;
+
     }
 
     .texto {
@@ -49,29 +127,30 @@ main {
         padding: 15px;
         font-weight: bold;
         width: 100%;
+        color: black;
 
         @include tablet {
             width: 100%;
             text-align: justify;
-            padding: 5px;
+            padding: 10px;
             margin: 5px;
         }
 
         @include mobile {
             width: 100%;
             text-align: justify;
-            padding: 5px;
+            padding: 10px;
             margin: 5px;
         }
     }
 
     a {
-        margin: 15px;
+        margin: 10px;
         font-weight: bold;
 
         &:hover {
             transition: 0.5s;
-            background-color: red;
+            background-color: rgb(89, 23, 23);
         }
     }
 
@@ -96,9 +175,10 @@ main {
 
         img {
             width: 200px;
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
             padding: 5px;
             max-width: 100%;
+            overflow: hidden;
 
 
             &:hover {
@@ -124,12 +204,14 @@ main {
 }
 
 .marcas {
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
     flex-wrap: wrap;
+    gap: 5px;
 
     img {
 
@@ -141,12 +223,43 @@ main {
         background-color: transparent;
         margin-bottom: 20px;
         justify-content: center;
+        color: red;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: 0.5s;
+            color: rgba(107, 18, 18, 0.458);
+
+        }
+
+    }
+
+
+    i {
+        font-weight: bolder;
+        font-size: x-large;
+        cursor: pointer;
+        padding: 10px;
 
         &:hover {
             transform: scale(1.15);
             transition: 0.5s;
 
         }
+
+        @include desktop {
+            display: none;
+        }
+
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
 
     }
 
@@ -165,70 +278,5 @@ main {
         margin: 5px;
         justify-content: center;
     }
-}
-
-.portada {
-   
-    
-
-    img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.7;
-        position: relative;
-        width: 100%;
-
-        @include desktop {
-            width: 90%;
-            margin:auto;
-        }
-
-        @include tablet {
-            width: 90%; 
-            margin:auto; 
-        }
-
-        @include mobile {
-            width: 90%; 
-            margin:auto; 
-        }
-    }
-
-
-    .parrafo {
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        padding:40px;
-        font-size: x-large;
-
-        @include desktop {
-            width: 100%;
-            font-size: large;
-        }
-
-        @include tablet {
-            width: 80%;
-            font-size: medium;
-            margin:auto;
-            
-        }
-
-        @include mobile {
-            width: 80%;
-            font-size: small;
-            margin:auto;
-           
-        }
-
-
-
-
-
-    }
-
-
-
 
 }

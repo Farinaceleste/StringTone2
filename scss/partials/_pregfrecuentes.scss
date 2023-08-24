@@ -44,6 +44,7 @@
         margin: auto;
         gap: 20px;
         padding: 30px;
+        flex-direction:row;
 
 
 
@@ -52,16 +53,17 @@
             align-items: center;
             
             justify-content: space-between;
-            background-color: whitesmoke;
+            background-color: $colorsecundario;
             font-size: 5rem;
             font-weight: bolder;
-            width: 33%;
+            width: 28%;
             padding: 25px;
             gap: 25px;
             border-radius: 10px;
+            text-align:left;
 
             &:hover {
-                box-shadow: 0 0 10px rgb(32, 77, 201);
+                box-shadow: 0 0 10px rgb(109, 14, 14);
                 scale: 1.05;
             }
 

@@ -1,55 +1,21 @@
-main {
-    width: 100%;
-}
-
-.mapa {
-    width: 70%
-}
-
-.QuienesSomos {
-    @include estilo-parrafo;
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
-}
-
-.container2 {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    margin: 50px;
-    gap: 10px;
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-
 
     .nosotros-imagen {
-        display: flex;
-        flex-direction: column;
-        object-fit: cover;
-        margin-right: 15px;
-        width: 100%;
 
+        padding: 2rem 3rem;
+        text-align: center;
+        color: black;
+        border: 3px solid #fff;
+       
+        backdrop-filter: blur(10px);
+      
+     
+        
         img {
-            width: 100%;
+            max-width: 40px;
+           width: 100%;
+        vertical-align: top;
+        border: 0;
+            
 
             @include tablet {
                 display: none;
@@ -59,50 +25,60 @@ main {
                 display: none;
             }
         }
+    }
 
+    .parrafo-nosotros {
+        background-color: rgba(128, 128, 128, 0.477);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 3.5rem;
+        color:white;
+        text-align: end;
 
     }
 
-    .info {
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 80%;
+
+    .info-nosotros {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: justify;
+        padding: 25px;
+
+        ul {
 
 
-
-        .info-nosotros {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: justify;
-            padding: 15px;
-            
-
-            ul {
+            li {
+                font-weight: bold;
+                gap: 15px;
+                margin-right: 50px;
+                margin-top: 20px;
                 list-style: none;
-                
-                li {
-                    font-weight: bold;
-                    gap: 15px;
-                    margin-right: 50px;
-                    margin-top: 20px;
-
-                }
-
-                i {
-                    padding: 15px;
-                    cursor: pointer;
-                }
             }
 
-            .mapa {
-                width: 70%;
+            i {
+                padding: 15px;
+                cursor: pointer;
             }
         }
+
+        .mapa {
+
+            width: 100%;
+        }
     }
-
-
 }
+
 
 .valoraciones {
     display: grid;
@@ -117,7 +93,6 @@ main {
         flex-direction: column;
         width: 100%;
     }
-
 
     .valoracion {
         display: flex;
@@ -202,7 +177,7 @@ main {
         }
 
         span {
-            color: gray;
+            color: $colorprincipal;
             margin-top: 2px;
         }
     }

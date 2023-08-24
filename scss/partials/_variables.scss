@@ -16,10 +16,15 @@ $colorsecundario: whitesmoke;
     width: 100%;
 }
 
-@mixin estilo-formulario {
-    display:flex;
-    flex-direction: column;
-    align-items: baseline;
+
+@mixin estilo-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    justify-content: center;
     padding: 10px;
-    width: 50%;
+    color: white;
+    margin-top:20px;
+    background-color: white;
 }

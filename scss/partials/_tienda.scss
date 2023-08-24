@@ -1,103 +1,173 @@
-.contenedor {
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    contain: paint;
+/*ITEMS DE TIENDA*/
 
+.contenedor-item {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2.5px;
+    grid-row-gap: 2.5px;
+    width: 100%;
+    transition: .3s;
+    justify-content: center;
+    justify-items: center;
 
-
-
-    .contenedor-item {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-        grid-row-gap: 30px;
-        width: 100%;
-        transition: .3s;
+    @include mobile {
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
 
-        @include mobile {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        padding: 10px;
+        transition: .3s;
+        background-color: rgb(255, 255, 255);
+        gap: 5px;
+
+
+        &:hover {
+            box-shadow: 0 0 10px black;
+            scale: 1.05;
         }
+
+        img {
+            width: 50%;
+            max-width: 80px;
+            min-width: 80px;
+            background-color: white;
+        }
+
+        .titulo-item {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .precio-item {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .boton-item {
+            display: block;
+            margin: 10px auto;
+            border: none;
+            background: black;
+            color: aliceblue;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+/*CARTITAS DE TIENDA*/
+
+
+.sector-compras {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .card-img {
+         width: 100%;
+
+        img {
+           
+           max-width: 400px;
+
+        }
+    }
+
+    .card-body {
+        max-width: 400px;
+        width: 30%;
+        justify-content: end;
+        color: white;
+        position: relative;
+        padding: 10px;
+    }
+
+    .card-tienda {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: black;
+
+    }
+
+
+    .texto {
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+        padding: 15px;
+        font-weight: bold;
+        width: 100%;
+        color: whitesmoke;
 
         @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .items {
-            max-width: 200px;
+            width: 100%;
+            text-align: justify;
             padding: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-            padding: 20px;
-            transition: .3s;
-            background-color: rgb(255, 255, 255);
-            gap: 5px;
-
-            &:hover {
-                box-shadow: 0 0 10px black;
-                scale: 1.05;
-            }
-
-            img {
-                width: 100%;
-                max-width: 150px;
-                min-width: 150px;
-                background-color: white;
-            }
-
-            .titulo-item {
-                display: block;
-                font-weight: bold;
-                text-align: center;
-                text-transform: uppercase;
-            }
-
-            .precio-item {
-                display: block;
-                text-align: center;
-                font-weight: bold;
-                font-size: 22px;
-            }
-
-            .boton-item {
-                display: block;
-                margin: 10px auto;
-                border: none;
-                background: black;
-                color: aliceblue;
-                padding: 5px 15px;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-
+            margin: 5px;
         }
 
-
-
-
-    }
-}
-
-img .card-img-top {
-    padding: 5px;
-}
-
-nav {
-    .pagination {
-        color: grey;
-        padding: 3rem;
+        @include mobile {
+            width: 100%;
+            text-align: justify;
+            padding: 10px;
+            margin: 5px;
+        }
     }
 
+    .texto2 {
+        font-weight: lighter;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    a {
+        margin: 10px;
+        font-weight: bold;
+
+        &:hover {
+            transition: 0.5s;
+            background-color: rgb(62, 61, 61);
+        }
+    }
 }

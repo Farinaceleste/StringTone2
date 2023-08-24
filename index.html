@@ -13,7 +13,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
 </head>
 
 <body class="body">
@@ -21,32 +20,35 @@
         <div class="header2">Envios gratis en compras superiores a $100.000 y 3 cuotas sin interés.</div>
         <nav class="navbar bg-dark navbar-expand-lg bg-body-" data-bs-theme="dark">
             <div class="container-fluid">
-
-                <img src=" ./images/logofinal.png" alt="Logo" width="130" height="130">
+                <div class="enlace-logo">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src=" ./images/logofinal.png" alt="Logo">
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-l g-0">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-l g-0 navbar-item">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">Quienes somos</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                            <a class="nav-link" href="./pages/nosotros.html">QUIENES SOMOS</a>
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/form.html">Contacto</a>
+                            <a class="nav-link" href="./pages/tienda.html">TIENDA</a>
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/pregfrec.html">Preguntas frecuentes</a>
+                            <a class="nav-link" href="./pages/form.html">CONTACTO</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/pregfrec.html">PREGUNTAS FRECUENTES</a>
                         </li>
                     </ul>
                     <div class="iconos-header">
@@ -58,75 +60,49 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div class="portada">
             <div class="imagen-portada">
                 <img src="images/imagen-fondo.webp" alt="imagen fondo">
             </div>
-            <hr>
-            <div class="parrafo">
 
-                StringTone es una casa de música líder en instrumentos musicales y equipamiento de
-                audio
-                profesional.
-                Tenemos algunas de las marcas más populares en stock, tales como Fender, Roland, Casio, Marshall,
-                Ibanez,
-                Behringer y Shure, sin olvidar que somos distribuidores oficiales Yamaha para instrumentos musicales
-                y
-                audio
-                en Argentina.
-
-            </div>
-            <hr>
+    
         </div>
         <section class="tarjetas-index">
             <div class="card-index" data-aos="fade-up">
                 <img src="./images/tarjeta-index-1.jpg" class="card-img-top" alt="imagen-index">
                 <div class="card-body">
-                    <p class="card-text texto">NOVEDADES 2023</p>
+                    <p class="card-text texto">NOVEDADES 2023. Registrate para estar al tanto de las novedades.</p>
                     <a href="#" class="btn btn-secondary">Ver ahora</a>
                 </div>
             </div>
             <div class="card-index" data-aos="fade-up">
                 <img src="./images/tarjeta-index.-2.jpg" class="card-img-top" alt="imagen-index">
                 <div class="card-body">
-                    <p class="card-text texto">Suscríbete al Newsletter y enterate las novedades.</p>
+                    <p class="card-text texto">Suscríbete al Newsletter y enterate las novedades para conseguir los mejores descuentos!</p>
                     <a href="#" class="btn btn-secondary">Ver ahora</a>
                 </div>
             </div>
             <div class="card-index" data-aos="fade-up">
                 <img src="./images/tarjeta-index-3.jpg" class="card-img-top" alt="imagen-index">
                 <div class="card-body">
-                    <p class="card-text texto">¡Conseguí tu guitarra por menos de $200.000!</p>
+                    <p class="card-text texto">¡Conseguí tu guitarra por menos de $200.000! No te la podes perder!! </p>
                     <a href="#" class="btn btn-secondary">Ver ahora</a>
                 </div>
             </div>
             <div class="card-index" data-aos="fade-up">
                 <img src="./images/tarjeta-index-4.jpg" class="card-img-top" alt="imagen-index">
                 <div class="card-body">
-                    <p class="card-text texto">Acaba de llegar nuevo stock de modelos de alta demanda. ¡Date prisa y
-                        toma el tuyo ahora mientras están disponibles y listos para enviar!</p>
+                    <p class="card-text texto">Acaba de llegar nuevo stock de modelos de alta demanda. </p>
                     <a href="#" class="btn btn-secondary">Ver ahora</a>
                 </div>
             </div>
         </section>
-
-
-        <hr>
-        <div class="titulos">PRODUCTOS RECOMENDADOS</div>
-        <section class="grilla">
-            <div class="guitarras"><img src="./images/epiphoneguitar.jpg" alt="gui-epiphone"></div>
-            <div class="guitarras"><img src="./images/ibanezguitar.webp" alt="gui-ibanez"></div>
-            <div class="guitarras"><img src="./images/ltdguitar.jfif" alt="gui-ltd"></div>
-            <div class="guitarras"><img src="./images/epiphoneguitar2.jpg" alt="gui-epiphone"></div>
-            <div class="guitarras"><img src="./images/ltdguitar2.jfif" alt="gui-ltd"></div>
-            <div class="guitarras"><img src="./images/epiphonenueva.webp" alt="gui-epiphone"></div>
-        </section>
-
-        <hr>
-
+        
         <div class="titulos">MARCAS</div>
         <section class="marcas">
+            
             <img src="./images/logofender.png" alt="logo-fender">
             <img src="./images/epiphonelogo.png" alt="logo-epiphone">
             <img src="./images/jacksonlogo.png" alt="logo-jackson">
@@ -135,36 +111,76 @@
             <img src="./images/prslogo.png" alt="logo-prs">
             <img src="./images/yamahalogo.png" alt="logo-yamaha">
             <img src="./images/gibsonlogo.png" alt="logo-gibson">
+            
         </section>
     </main>
 
     <footer class="footer">
-
-        <div class="redes">
-            <i class="bi bi-facebook fb"></i>
-            <i class="bi bi-twitter tw"></i>
-            <i class="bi bi-instagram ig"></i>
-            <i class="bi bi-pinterest pi"></i>
-            <i class="bi bi-linkedin li"></i>
+        <div class="logo-footer">
+            <img src="./images/logofinal.png" alt="logo">
         </div>
         <ul class="footer_list">
+            <h6>PRODUCTOS</h6>
+            <hr>
             <div>
-                <li> <a href="./pages/form.html"> Contacto</a></li>
+                <li><a href="./pages/tienda.html">Guitarras eléctricas</a></li>
             </div>
             <div>
-                <li><a href="#"> Boton de arrepentimiento</a></li>
+                <li><a href="./pages/tienda.html"> Bajos</a></li>
             </div>
             <div>
-                <li><a href="#"> Politicas de privacidad</a> </li>
+                <li><a href="./pages/tienda.html"> Accesorios</a> </li>
             </div>
             <div>
-                <li><a href="#"> Cambios y devoluciones</a> </li>
+                <li><a href="./pages/tienda.html">Merchandising</a> </li>
+            </div>
+        </ul>
+        <ul class="footer_list">
+            <h6>EMPRESA</h6>
+            <hr>
+            <div>
+                <li><a href="./pages/nosotros.html">Sobre nosotros</a></li>
+            </div>
+            <div>
+                <li><a href="./pages/tienda.html"> Bajos</a></li>
+            </div>
+            <div>
+                <li><a href="./pages/tienda.html"> Accesorios</a> </li>
+            </div>
+            <div>
+                <li><a href="./pages/tienda.html">Merchandising</a> </li>
+            </div>
+        </ul>
+        <ul class="footer_list">
+            <h6>ATENCIÓN AL CLIENTE</h6>
+            <hr>
+            <div>
+                <li><a href="./pages/form.html">Ayuda</a></li>
+            </div>
+            <div>
+                <li><a href="#">Garantías</a></li>
+            </div>
+            <div>
+                <li><a href="#">Políticas de privacidad</a> </li>
+            </div>
+            <div>
+                <li><a href="#">Mi cuenta</a> </li>
             </div>
             <i class="bi bi-whatsapp whatsapp"></i>
-
         </ul>
-
+            
+            <div class="redes">
+                <i class="bi bi-facebook fb"></i>
+                <i class="bi bi-twitter tw"></i>
+                <i class="bi bi-instagram ig"></i>
+                <i class="bi bi-pinterest pi"></i>
+                <i class="bi bi-linkedin li"></i>
+            </div>
+            
     </footer>
+    <div class="desarrollado">
+        Copyright 2023 StringTone Brands, Inc. Todos los derechos reservados.
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
