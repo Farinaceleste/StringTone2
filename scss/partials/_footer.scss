@@ -5,6 +5,7 @@
     justify-content: center;
     background-color: #171718;
     align-content: center;
+    width: 100%;
 
     img {
 
@@ -28,6 +29,7 @@
         margin-top: 25px;
         gap: 30px;
         padding: 30px;
+        font-weight: lighter;
 
         .whatsapp {
 
@@ -43,6 +45,16 @@
             &:hover {
                 color: black;
                 transition: 0.5s;
+            }
+
+            @include tablet{
+                margin-right: 10px;
+                font-size: 70px;
+            }
+
+            @include mobile {
+                margin-right: 10px;
+                font-size:50px;
             }
         }
 
@@ -125,5 +137,10 @@
     background-color: white;
     text-align: center;
     text-decoration: none;
+    font-weight: lighter;
+
+    @include mobile {
+        margin:5px;
+    }
 
 }

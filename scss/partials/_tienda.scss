@@ -4,8 +4,6 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2.5px;
-    grid-row-gap: 2.5px;
     width: 100%;
     transition: .3s;
     justify-content: center;
@@ -31,16 +29,14 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        max-width: 200px;
         padding: 10px;
         transition: .3s;
         background-color: rgb(255, 255, 255);
-        gap: 5px;
 
 
         &:hover {
-            box-shadow: 0 0 10px black;
-            scale: 1.05;
+            box-shadow: 0 0 5px black;
+            scale: 1.02;
         }
 
         img {
@@ -75,6 +71,21 @@
             cursor: pointer;
         }
     }
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /*CARTITAS DE TIENDA*/
@@ -83,43 +94,33 @@
 .sector-compras {
 
     display: flex;
-    flex-direction: row;
     text-align: center;
-    padding: 20px;
     justify-content: center;
-    justify-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    margin-inline: 10px;
+    width: 100%;
 
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    .card-img {
-         width: 100%;
-
-        img {
-           
-           max-width: 400px;
-
-        }
-    }
 
     .card-body {
-        max-width: 400px;
-        width: 30%;
-        justify-content: end;
         color: white;
-        position: relative;
-        padding: 10px;
+        padding: 5px;
+        width: 30%;
+        max-width: 350px;
+
+        .card-img {
+            width: 100%;
+
+            &:hover {
+                filter: blur(2px);
+            }
+
+        }
+
+        @include tablet {
+            width: 70%;
+        }
+
     }
 
     .card-tienda {
@@ -128,46 +129,48 @@
         flex-wrap: wrap;
         background-color: black;
 
-    }
-
-
-    .texto {
-        display: flex;
-        text-align: justify;
-        justify-content: center;
-        padding: 15px;
-        font-weight: bold;
-        width: 100%;
-        color: whitesmoke;
-
-        @include tablet {
-            width: 100%;
-            text-align: justify;
-            padding: 10px;
-            margin: 5px;
-        }
-
-        @include mobile {
-            width: 100%;
-            text-align: justify;
-            padding: 10px;
-            margin: 5px;
-        }
-    }
-
-    .texto2 {
-        font-weight: lighter;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    a {
-        margin: 10px;
-        font-weight: bold;
-
         &:hover {
-            transition: 0.5s;
-            background-color: rgb(62, 61, 61);
+            background-color: red;
+            color:white;
         }
+       
     }
+
+    p {
+        margin-bottom: 0;
+
+       
+    }
+}
+
+
+.texto {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+    color: whitesmoke;
+
+    @include tablet {
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    @include mobile {
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+.texto2 {
+    font-weight: lighter;
+    text-align: center;
+    cursor: pointer;
+    padding:5px;
 }

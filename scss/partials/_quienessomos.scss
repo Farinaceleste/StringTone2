@@ -1,84 +1,60 @@
+.parrafo-nosotros {
+    @include estilo-titulos;
+}
 
-    .nosotros-imagen {
-
-        padding: 2rem 3rem;
-        text-align: center;
-        color: black;
-        border: 3px solid #fff;
-       
-        backdrop-filter: blur(10px);
-      
-     
-        
-        img {
-            max-width: 40px;
-           width: 100%;
-        vertical-align: top;
-        border: 0;
-            
-
-            @include tablet {
-                display: none;
-            }
-
-            @include mobile {
-                display: none;
-            }
-        }
-    }
-
-    .parrafo-nosotros {
-        background-color: rgba(128, 128, 128, 0.477);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 3.5rem;
-        color:white;
-        text-align: end;
-
-    }
-
-
-.info {
+.container2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 30px;
-    width: 80%;
+    align-items: center;
+    gap:15px;
+    text-align: left;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    width: 90%;
 
-    .info-nosotros {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: justify;
-        padding: 25px;
+    img {
+        width:60%;
+    }
 
-        ul {
+}
+
+.info-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    margin:40px;
+    gap:20px;
+   
 
 
-            li {
-                font-weight: bold;
-                gap: 15px;
-                margin-right: 50px;
-                margin-top: 20px;
-                list-style: none;
-            }
-
-            i {
-                padding: 15px;
-                cursor: pointer;
-            }
+    .lista-nosotros {
+        color:black;
+        margin-right: 26px;
+        list-style: none;
+        font-size: 20px;
+        
+        .bi {
+            padding: 15px;
         }
 
-        .mapa {
 
-            width: 100%;
-        }
+    }
+
+
+    iframe {
+        width: 600px;
     }
 }
 
+
+
+
+
+
+/* CAJITAS DE VALORACIONES */
 
 .valoraciones {
     display: grid;

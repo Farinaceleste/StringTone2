@@ -16,9 +16,9 @@
         margin-left: auto;
         margin-right: auto;
 
-        /*
-        transform:translate(-50%,-50%); 
-        */
+        &:hover {
+            filter: blur(2px);
+        }
 
 
         @include desktop {
@@ -70,21 +70,15 @@
     }
 }
 
-
-
 .tarjetas-index {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     width: 100%;
-    background-color: black;
     gap: 15px;
     justify-content: center;
     justify-items: center;
-
-
 
     @include tablet {
         display: grid;
@@ -100,24 +94,33 @@
         width: 100%;
     }
 
-    img {
-        width: 100%;
-    }
 
     .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
-        justify-content: end;
-
-
+        flex: 1;
     }
 
+
+
     .card-index {
-        background-color: white;
+        background-color: black;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        max-width: 500px;
 
-        width: 80%;
+        .card-img-top {
+            width: 100%;
+
+            &:hover {
+                filter: blur(2px);
+                border-style: none;
+            }
+        }
+
 
     }
 
@@ -127,7 +130,7 @@
         padding: 15px;
         font-weight: bold;
         width: 100%;
-        color: black;
+        color: white;
 
         @include tablet {
             width: 100%;
@@ -147,60 +150,18 @@
     a {
         margin: 10px;
         font-weight: bold;
+        width: 20%;
+        border-radius: 0;
+        background-color: black;
+        color: white;
+
 
         &:hover {
             transition: 0.5s;
-            background-color: rgb(89, 23, 23);
+            background-color: red;
         }
     }
 
-}
-
-.grilla {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    gap: 1.5px;
-
-
-    .guitarras {
-        margin: auto;
-        max-width: 200px;
-        min-width: 200px;
-        box-sizing: border-box;
-        cursor: pointer;
-
-        img {
-            width: 200px;
-            box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.35);
-            padding: 5px;
-            max-width: 100%;
-            overflow: hidden;
-
-
-            &:hover {
-                border-color: black;
-
-            }
-        }
-    }
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        font-size: x-small;
-        margin: auto;
-
-    }
 }
 
 .marcas {
@@ -234,49 +195,5 @@
 
     }
 
-
-    i {
-        font-weight: bolder;
-        font-size: x-large;
-        cursor: pointer;
-        padding: 10px;
-
-        &:hover {
-            transform: scale(1.15);
-            transition: 0.5s;
-
-        }
-
-        @include desktop {
-            display: none;
-        }
-
-
-        @include tablet {
-            display: none;
-        }
-
-        @include mobile {
-            display: none;
-        }
-
-
-    }
-
-    @include tablet {
-
-        align-items: center;
-        margin: 5px;
-        justify-content: center;
-
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin: 5px;
-        justify-content: center;
-    }
 
 }
