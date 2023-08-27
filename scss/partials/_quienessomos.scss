@@ -3,49 +3,115 @@
 }
 
 .container2 {
+    background: rgba(0, 0, 0, 0.566);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     text-align: left;
     flex-direction: row;
     font-size: 24px;
-    font-weight: bold;
+    
     font-style: italic;
-    width: 90%;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    color: white;
+
 
     img {
-        width:60%;
+       
+
+
+        @include tablet {
+            width: 90%;
+        }
+
+        @include mobile {
+            width: 90%;
+        }
+
     }
 
+    @include tablet {
+        padding:15px;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    @include mobile {
+        padding: 15px;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
 }
 
 .info-nosotros {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin:40px;
+    margin-bottom: 40px;
+    padding:20px;
     gap:20px;
-   
+    font-weight: bold;
 
+    @include tablet {
+        
+        justify-content: center;
+        width: 80%;
+        align-items: center;
+    }
+
+    @include mobile {
+   
+        justify-content: center;
+        width: 80%;
+
+    }
+
+    .parrafo-nosotros {
+      
+
+        @include mobile {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        @include tablet {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+    }
 
     .lista-nosotros {
-        color:black;
+        color: black;
         margin-right: 26px;
         list-style: none;
         font-size: 20px;
-        
+
         .bi {
             padding: 15px;
         }
 
-
+        @include mobile {
+            font-size: 18px;
+            font-weight: lighter;
+        }
     }
-
 
     iframe {
         width: 600px;
+
+        @include tablet {
+            width: 80%;
+        }
+
+        @include mobile {
+            width: 80%;
+        }
     }
 }
 

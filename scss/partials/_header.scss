@@ -18,6 +18,7 @@
     font-weight: bold;
     padding: 15px;
     gap:40px;
+
     
    }
 
@@ -43,8 +44,6 @@
         }
     }
 
-
-
     .iconos-header {
         color: white;
         display: flex;
@@ -65,5 +64,17 @@
             display: none;
         }
 
+    }
+
+    @include desktop {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
     }
 }

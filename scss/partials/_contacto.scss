@@ -2,22 +2,37 @@
 form {
     
     @include mobile {
-        min-width: 60%;
+       
+        width: 80%;
     }
 
     @include tablet {
-        min-width: 60%;
+        
+        width: 80%;
+      
     }
 }
 
 .titulos {
     @include estilo-titulos;
 
+    @include mobile {
+        font-size: 20px;
+    }
+
 }
 
 .contacto-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @include mobile {
+        display:grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin:20px;
+
+    }
 }
 
 .formulario-usuario {
@@ -30,4 +45,12 @@ form {
     width: 70%;
     padding-right: 10px;
     padding-bottom: 15px;
+
+    @include mobile {
+        display:grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin:20px;
+
+  }
 }

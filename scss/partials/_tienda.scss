@@ -98,7 +98,6 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 40px;
-    margin-inline: 10px;
     width: 100%;
 
 
@@ -118,7 +117,7 @@
         }
 
         @include tablet {
-            width: 70%;
+            width:90%;
         }
 
     }

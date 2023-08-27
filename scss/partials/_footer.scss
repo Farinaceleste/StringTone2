@@ -31,6 +31,10 @@
         padding: 30px;
         font-weight: lighter;
 
+        @include mobile {
+            padding:10px;
+        }
+
         .whatsapp {
 
             position: fixed;
@@ -39,7 +43,7 @@
             cursor: pointer;
             font-size: 75px;
             color: green;
-            margin: 25px;
+            padding: 15px;
             background-color: transparent;
 
             &:hover {
@@ -47,14 +51,14 @@
                 transition: 0.5s;
             }
 
-            @include tablet{
+            @include tablet {
                 margin-right: 10px;
                 font-size: 70px;
             }
 
             @include mobile {
                 margin-right: 10px;
-                font-size:50px;
+                font-size: 50px;
             }
         }
 
@@ -80,7 +84,11 @@
         margin: 2rem;
         gap: 15px;
         transition: .2s;
-        color: #2d2d33a8;
+
+        a {
+            color: #2d2d33a8;
+
+        }
 
         .fb:hover {
             color: #181dc1;
@@ -102,16 +110,15 @@
             color: #0077b6;
         }
 
-
-
         @include mobile {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            display:flex;
+            flex-direction: row;
+
         }
 
         @include tablet {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 
@@ -140,7 +147,7 @@
     font-weight: lighter;
 
     @include mobile {
-        margin:5px;
+        margin: 5px;
     }
 
 }
