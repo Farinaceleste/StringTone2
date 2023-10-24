@@ -1,3 +1,6 @@
+// CLICK PARA ABRIR CARRITO DESDE TIENDA 
+
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
@@ -9,21 +12,27 @@ btnCart.addEventListener("click", () => {
 
 
 
+//----------------------------------------------------------------------------------------------
+
+
+const rowProduct = document.querySelector(".row.product");
+const productsList = document.querySelector (".contenedor-item")
+
+let allProducts = [];
+
+productsList.addEventListener('click', e => {
+
+	if (e.target.classList.contains('btn-add-cart'));
+	const Product = e.target.parentElement;
+
+	const infoProduct = {
+		quantity: 1,
+		title: Product.querySelector('h4').textContent,
+		price: Product.querySelector('span').textContent
+	}
 
 
 
-
-const cartProductos =document.querySelector('#carrito-productos');
-
-const agregarProducto =document.querySelector('#btn-add-cart');
-const productoCarrito =document.querySelector("#items");
-
-
-
-
-productoCarrito.addEventListener ('click', e => {
-
-console.log (e.target);
-
+	console.log (infoProduct);
 })
 

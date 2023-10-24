@@ -1,7 +1,7 @@
 const Guitarras = "Guitarras";
 const Bajos = "Bajos";
 
-const productos =[
+const Productos =[
     {
         id: "guitarras-01",
         titulo: "Aerodyne Especial Telecaster",
