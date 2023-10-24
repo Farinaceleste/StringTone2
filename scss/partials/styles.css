@@ -931,6 +931,10 @@ li {
   align-items: center;
 }
 
+.cart-empty {
+  display: none;
+}
+
 .hidden-cart {
   display: none;
 }
