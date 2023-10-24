@@ -1,6 +1,6 @@
-const btnCart = document.querySelector('#container-cart-icon');
+const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
-	'#container-cart-products'
+	'.container-cart-products'
 );
 
 btnCart.addEventListener("click", () => {
@@ -13,17 +13,17 @@ btnCart.addEventListener("click", () => {
 
 
 
-// const cartProductos =document.querySelector('#carrito-productos');
+const cartProductos =document.querySelector('#carrito-productos');
 
-// const agregarProducto =document.querySelector('#btn-add-cart');
-// const productoCarrito =document.querySelector("#items");
-
-
+const agregarProducto =document.querySelector('#btn-add-cart');
+const productoCarrito =document.querySelector("#items");
 
 
-// productoCarrito.addEventListener ('click', e => {
 
-// console.log (e.target);
 
-// })
+productoCarrito.addEventListener ('click', e => {
+
+console.log (e.target);
+
+})
 
