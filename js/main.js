@@ -20,7 +20,7 @@ const rowProduct = document.querySelector(".row-product");
 const productsList = document.querySelector(".contenedor-item")
 
 let allProducts = [];
-const valortotal = document.querySelector('.total-pagar');
+const valorTotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('.contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
@@ -154,7 +154,7 @@ const showHTML = () => {
 
 	});
 
-	valortotal.innerText = `$${total}`;
+	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 
 };
