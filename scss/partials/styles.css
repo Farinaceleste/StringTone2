@@ -924,7 +924,7 @@ nav .menu .active {
 }
 .container-cart-products .cart-total {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 0;
   gap: 20px;
@@ -939,6 +939,7 @@ nav .menu .active {
   display: flex;
   align-items: center;
   justify-items: center;
+  justify-content: space-around;
 }
 .container-cart-products .hidden {
   display: none;

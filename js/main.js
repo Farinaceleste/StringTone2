@@ -32,6 +32,7 @@ productsList.addEventListener('click', (e) => {
 		Toastify({
 			text: "Producto Agregado",
 			className: "info",
+			gravity: "bottom",
 			style: {
 				background: "linear-gradient(to left, #000000, #772e25)",
 			}
@@ -79,6 +80,7 @@ rowProduct.addEventListener('click', (e) => {
 	Toastify({
 		text: "Producto eliminado",
 		className: "info",
+		gravity: "bottom",
 		style: {
 			background: "linear-gradient(to left, #000000, #772e25)",
 		}
