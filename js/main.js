@@ -21,7 +21,7 @@ const productsList = document.querySelector(".contenedor-item")
 
 let allProducts = [];
 const valorTotal = document.querySelector('.total-pagar');
-const countProducts = document.querySelector('.contador-productos');
+const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
