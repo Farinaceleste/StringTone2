@@ -1,0 +1,135 @@
+.body {
+    background-color: white;
+
+}
+
+.carrito-checkout {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+
+    .titulo-principal {
+        padding: 20px;
+    }
+
+    .carrito-vacio {
+        padding: 20px;
+    }
+
+    .disabled {
+        display: none;
+    }
+}
+
+.contenedor-carrito {
+
+
+    .disabled {
+        display: none;
+    }
+
+}
+
+.detalle-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(183, 178, 178);
+    padding: 20px;
+    align-items: center;
+
+    margin: 20px;
+    justify-items: center;
+
+
+    img {
+        max-width: 2.5%;
+    }
+
+    .carrito-producto-cantidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrito-producto-precio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrito-producto-subtotal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrito-producto-eliminar {
+        border-style: none;
+        background-color: rgb(183, 178, 178);
+        font-size: x-large;
+
+        &:hover {
+            color: darkred;
+        }
+    }
+}
+
+.carrito-acciones {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 10px;
+
+    .carrito-acciones-vaciar {
+        border-style: none;
+        border-radius: 75px;
+        background-color: rgb(183, 178, 178);
+        padding: 10px;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+
+    }
+
+
+    .carrito-acciones-derecha {
+        display: flex;
+
+        flex-direction: column;
+
+
+        .carrito-acciones-total {
+            display: flex;
+            font-weight: bold;
+
+
+
+
+        }
+
+        .carrito-acciones-comprar {
+            border-style: none;
+            border-radius: 75px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(183, 178, 178);
+            font-weight: bold;
+            align-items: center;
+            padding: 10px;
+
+
+            &:hover {
+                background-color: darkred;
+                color: white;
+
+            }
+        }
+
+    }
+
+    .disabled {
+        display: none;
+    }
+}

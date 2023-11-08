@@ -18,7 +18,11 @@
     padding: 15px;
     gap:40px;
 
-    
+    &:hover {
+        color:red;
+    }
+
+ 
    }
 
     .header2 {
@@ -43,37 +47,4 @@
         }
     }
 
-    .iconos-header {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        cursor: pointer;
-        gap: 25px;
-        margin-right: 10px;
-
-        @include desktop {
-            display: none;
-        }
-
-        @include mobile {
-            display: none;
-        }
-
-        @include tablet {
-            display: none;
-        }
-
-    }
-
-    @include desktop {
-        width: 100%;
-    }
-
-    @include tablet {
-        width: 100%;
-    }
-
-    @include mobile {
-        width: 100%;
-    }
 }

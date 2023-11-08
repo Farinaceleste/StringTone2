@@ -1,0 +1,143 @@
+[
+    {
+        "id": "instrumento-01",
+        "titulo": "Aerodyne Special Telecaster",
+        "imagen": "./imagen/aerodyne.special.telecaster.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 210000
+    },
+    {
+        "id": "instrumento-02",
+        "titulo": "American Professional Jazzmaster",
+        "imagen": "./imagen/american-profesional-jazzmaster.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 165000
+    },
+    {
+        "id": "instrumento-03",
+        "titulo": "Jaguar Bass Limited Edition",
+        "imagen": "./imagen/bajo-jaguar-ed-limitada.jpg",
+        "categoria": {
+            "nombre": "Bajo",
+            "id": "bajo"
+        },
+        "precio": 420000
+    },
+    {
+        "id": "instrumento-04",
+        "titulo": "Flea Jazz Bass",
+        "imagen": "./imagen/flea-jazz-bass.jpg",
+        "categoria": {
+            "nombre": "Bajo",
+            "id": "bajo"
+        },
+        "precio": 315000
+    },
+    {
+        "id": "instrumento-05",
+        "titulo": "Troy Sanders Bass",
+        "imagen": "./imagen/troy-sanders-bajo.jpg",
+        "categoria": {
+            "nombre": "Bajo",
+            "id": "bajo"
+        },
+        "precio": 190000
+    },
+    {
+        "id": "instrumento-06",
+        "titulo": "American Bass",
+        "imagen": "./imagen/american-performer-bass.jpg",
+        "categoria": {
+            "nombre": "Bajo",
+            "id": "bajo"
+        },
+        "precio": 190000
+    },
+    {
+        "id": "instrumento-07",
+        "titulo": "American Mustang",
+        "imagen": "./imagen/american-performer-mustang.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 550000
+    },
+    {
+        "id": "instrumento-08",
+        "titulo": "American Stratocaster",
+        "imagen": "./imagen/american-profesional-stratocaster.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 450000
+    },
+    {
+        "id": "instrumento-09",
+        "titulo": "American Telecaster",
+        "imagen": "./imagen/american-profesional-telecaster.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 690000
+    },
+    {
+        "id": "instrumento-10",
+        "titulo": "American Ultra Jazzmaster",
+        "imagen": "./imagen/american-ultra-jazzmaster.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 880000
+    },
+    {
+        "id": "instrumento-11",
+        "titulo": "Malibu Special",
+        "imagen": "./imagen/malibu-especial.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 225000
+    },
+    {
+        "id": "instrumento-12",
+        "titulo": "NewPorter Player",
+        "imagen": "./imagen/newporter-player.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 150000
+    },
+    {
+        "id": "instrumento-13",
+        "titulo": "Tim Armstrong Hellcat",
+        "imagen": "./imagen/tim-armstrong-hellcat.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 183000
+    },
+    {
+        "id": "guitarra-14",
+        "titulo": "Sonoran Mini with Bag",
+        "imagen": "./imagen/sonoran-mini-with-bag.jpg",
+        "categoria": {
+            "nombre": "Guitarra",
+            "id": "guitarra"
+        },
+        "precio": 175000
+    }
+ 
+]

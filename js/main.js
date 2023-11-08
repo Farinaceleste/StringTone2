@@ -1,181 +1,207 @@
+// ARRAY PRODUCTOS 
 
+const productos = [
+    {
+        id: "instrumento-01",
+        titulo: "Aerodyne Special Telecaster",
+        imagen: "../images/aerodyne-special-telecaster.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 210000
+    },
+    {
+        id: "instrumento-02",
+        titulo: "American Professional Jazzmaster",
+        imagen: "../images/american-professional-jazzmaster.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 165000
+    },
+    {
+        id: "instrumento-03",
+        titulo: "Jaguar Bass Limited Edition",
+        imagen: "../images/bajo-jaguar-ed-limitada.jpg",
+        categoria: {
+            nombre: "Bajos",
+            id: "bajos"
+        },
+        precio: 420000
+    },
+    {
+        id: "instrumento-04",
+        titulo: "Flea Jazz Bass",
+        imagen: "../images/flea-jazz-bass.jpg",
+        categoria: {
+            nombre: "Bajos",
+            id: "bajos"
+        },
+        precio: 315000
+    },
+    {
+        id: "instrumento-05",
+        titulo: "Troy Sanders Bass",
+        imagen: "../images/troy-sanders-bajo.jpg",
+        categoria: {
+            nombre: "Bajos",
+            id: "bajos"
+        },
+        precio: 190000
+    },
+    {
+        id: "instrumento-06",
+        titulo: "American Bass",
+        imagen: "../images/american-performer-bass.jpg",
+        categoria: {
+            nombre: "Bajos",
+            id: "bajos"
+        },
+        precio: 190000
+    },
+    {
+        id: "instrumento-07",
+        titulo: "American Mustang",
+        imagen: "../images/american-performer-mustang.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 550000
+    },
+    {
+        id: "instrumento-08",
+        titulo: "American Stratocaster",
+        imagen: "../images/american-profesional-stratocaster.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 450000
+    },
+    {
+        id: "instrumento-09",
+        titulo: "American Telecaster",
+        imagen: "../images/american-profesional-telecaster.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 690000
+    },
+    {
+        id: "instrumento-10",
+        titulo: "American Ultra Jazzmaster",
+        imagen: "../images/american-ultra-jazzmaster.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 880000
+    },
+    {
+        id: "instrumento-11",
+        titulo: "Malibu Special",
+        imagen: "../images/malibu-especial.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 225000
+    },
+    {
+        id: "instrumento-12",
+        titulo: "NewPorter Player",
+        imagen: "../images/newporter-player.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 150000
+    },
+    {
+        id: "instrumento-13",
+        titulo: "Tim Armstrong Hellcat",
+        imagen: "../images/tim-armstrong-hellcat.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 183000
+    },
+    {
+        id: "guitarra-14",
+        titulo: "Sonoran Mini with Bag",
+        imagen: "../images/sonoran-mini-with-bag.jpg",
+        categoria: {
+            nombre: "Guitarras",
+            id: "guitarras"
+        },
+        precio: 175000
+    }
 
+]
 
-// CLICK PARA ABRIR CARRITO DESDE TIENDA 
+//mostrar productos en tienda, sin html
 
-
-const btnCart = document.querySelector('.container-cart-icon');
-const containerCartProducts = document.querySelector(
-	'.container-cart-products'
-);
-
-btnCart.addEventListener("click", () => {
-	containerCartProducts.classList.toggle('hidden-cart');
-});
-
-//----------------------------------------------------------------------------------------------
-
-
-const rowProduct = document.querySelector(".row-product");
-const productsList = document.querySelector(".contenedor-item")
-
-let allProducts = [];
-const valorTotal = document.querySelector('.total-pagar');
-const countProducts = document.querySelector('#contador-productos');
-const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
-
-productsList.addEventListener('click', (e) => {
-
-	if (e.target.classList.contains('btn-add-cart')) {
-
-		Toastify({
-			text: "Producto Agregado",
-			className: "info",
-			gravity: "bottom",
-			style: {
-				background: "linear-gradient(to left, #000000, #772e25)",
-			}
-		}).showToast();
-
-		const product = e.target.parentElement;
-
-		const infoProduct = {
-			quantity: 1,
-			title: product.querySelector('h4').textContent,
-			price: product.querySelector('span').textContent
-
-		}
-
-		const exits = allProducts.some(product => product.title === infoProduct.title);
-
-		if (exits) {
-
-			const products = allProducts.map(product => {
-				if (product.title === infoProduct.title) {
-					product.quantity++;
-					return product
-				} else {
-					return product
-				}
-			})
-			allProducts = [...products]
-		} else {
-			allProducts = [...allProducts, infoProduct]
-
-			localStorage.setItem("productos-en-carrito", JSON.stringify(allProducts));
-
-
-		}
-
-		showHTML();
-
-	}
-
-
-})
-
-rowProduct.addEventListener('click', (e) => {
-
-	Toastify({
-		text: "Producto eliminado",
-		className: "info",
-		gravity: "bottom",
-		style: {
-			background: "linear-gradient(to left, #000000, #772e25)",
-		}
-	}).showToast();
-
-	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement
-		const title = product.querySelector('p').textContent
-
-		allProducts = allProducts.filter(product => product.title !== title)
-
-		localStorage.setItem("productos-en-carrito", JSON.stringify(allProducts));
-
-	}
-
-	console.log(allProducts)
-	showHTML();
-})
-
-
-// funcion para mostrar productos en carrito
-
-const showHTML = () => {
-
-	if (!allProducts.length) {
-		containerCartProducts.innerHTML =
-			`
-		<p class="cart-empty">El carrito está vacío</p>
-		`
-	} else {
-		cartEmpty.classList.add('hidden');
-		rowProduct.classList.remove('hidden');
-		cartTotal.classList.remove('hidden');
-	}
-
-	rowProduct.innerHTML = '';
-
-	let total = 0;
-	let totalOfProducts = 0;
-
-	allProducts.forEach(product => {
-		const containerProduct = document.createElement('div');
-		containerProduct.classList.add('cart-product');
-		containerProduct.innerHTML = `
-
-		<div class="info-cart-product">
-		<span class="cantidad-producto-carrito">${product.quantity}</span>
-		<p class="titulo-producto-carrito">${product.title}</p>
-		<span class="precio-producto-carrito">${product.price}</span>
-	</div>
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		fill="none"
-		viewBox="0 0 24 24"
-		stroke-width="1.5"
-		stroke="currentColor"
-		class="icon-close"
-	>
-		<path
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			d="M6 18L18 6M6 6l12 12"
-		/>
-	</svg>
-
-	`
-		rowProduct.append(containerProduct);
-
-		total = total + parseInt(product.quantity * product.price.slice(1));
-		totalOfProducts = totalOfProducts + product.quantity;
-
-
-
-	});
-
-	valorTotal.innerText = `$${total}`;
-	countProducts.innerText = totalOfProducts;
-
-};
-
-
-// FILTRAR PRODUCTOS
-
+const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
 
+function cargarProductos(productosElegidos) {
+
+    contenedorProductos.innerHTML = "";
+
+    productosElegidos.forEach(producto => {
+        const div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+        <div class="producto-detalle">
+            <h6 class="titulo-item">${producto.titulo}</h6>
+            <span class="precio-item">$${producto.precio}</span>
+            <button class="boton-item btn-add-cart producto-agregar" id="${producto.id}">AGREGAR</button>
+        </div>
+        `
+        contenedorProductos.append(div);
+    });
+
+    actualizarBotonesAgregar();
+}
+
+cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
-	boton.addEventListener("click", (e) => {
+    boton.addEventListener("click", (e) => {
 
-		botonesCategorias.forEach(boton => boton.classList.remove("active"));
-		e.currentTarget.classList.add("active");
+        botonesCategorias.forEach(boton => boton.classList.remove("active"));
+        e.currentTarget.classList.add("active");
 
+        if (e.currentTarget.id != "todos") {
 
-
-	})
-
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+            cargarProductos(productosBoton)
+        } else {
+            cargarProductos(productos);
+        }
+    })
 })
+
+function actualizarBotonesAgregar () {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener ("click", agregarAlCarrito);
+    });
+}
+
+const productosenCarrito = [];
+
+function agregarAlCarrito (e) {
+
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find (producto => producto.id === idBoton);
+    console.log (productoAgregado);
+}
 

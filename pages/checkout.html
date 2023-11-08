@@ -57,67 +57,67 @@
                             <a class="nav-link" href="./pregfrec.html">PREGUNTAS FRECUENTES</a>
                         </li>
                     </ul>
+                    <div class="iconos-header">
 
-                </div>
-        </nav>
+                        <i class="bi bi-cart container-cart-icon" id="container-cart-icon"></i>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
 
-    </header>
-    <main>
-
-        <section class="sector-compras">
-            <div class="card-body body1">
-                <img src="../images/accesorios.jpg" class="card-img" alt="accesorios-tienda">
-                <div class="card-tienda">
-                    <p class="card-text texto">ACÚSTICAS-DE NUEVO EN STOCK</p>
-                    <p class="texto2">VER AHORA <i class="bi bi-arrow-right-circle"></i></p>
-                </div>
-            </div>
-
-            <div class="card-body body2">
-                <img src="../images/estuches.jpg" class="card-img" alt="estuche-tienda">
-                <div class="card-tienda">
-                    <p class="card-text texto">Kirk Hammett “GREENY” 1959</p>
-                    <p class="texto2">VER AHORA <i class="bi bi-arrow-right-circle"></i></p>
-                </div>
-            </div>
-            <div class="card-body body3">
-                <img src="../images/merch.jpg" class="card-img" alt="ropa-tienda">
-                <div class="card-tienda">
-                    <p class="card-text texto">MERCHANSIDING OFICIAL</p>
-                    <p class="texto2">VER AHORA <i class="bi bi-arrow-right-circle"></i></p>
-                </div>
-            </div>
-        </section>
-
-        <nav>
-            <div class="menu-carrito">
-                <ul class="menu">
-                    <li>
-                        <button id="todos" class="boton-menu boton-categoria active">TODOS LOS PRODUCTOS</button>
-                    </li>
-                    <li>
-                        <button id="guitarras" class="boton-menu boton-categoria">GUITARRAS</button>
-                    </li>
-                    <li>
-                        <button id="bajos" class="boton-menu boton-categoria">BAJOS</button>
-                    </li>
-                </ul>
-
-                <div class="iconos-header">
-
-                    <a href="../pages/checkout.html"> <i class="bi bi-cart container-cart-icon" id="container-cart-icon"></i></a>
-                    <div class="count-products">
-                        <span id="contador-productos" class="numerito">0</span>
                     </div>
                 </div>
         </nav>
 
-        <div id="contenedor-productos" class="contenedor-item">
+    </header>
+
+    <body class="body">
+        <div class="carrito-checkout">
+
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. </p>
+            </div>
+            <div id="carrito-productos" class="carrito-productos disabled">
 
 
-           
-        </div>
-    </main>
+                <div class="detalle-carrito">
+                    <img class="carrito-producto-imagen" src="../images/aerodyne-special-telecaster.jpg"
+                        alt="${producto.titulo}">
+                    <div class="carrito-producto-titulo">
+                        <small>Título</small>
+                        <h4>Aerodyne Special Telecaster</h4>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$210000</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$210000</p>
+                    </div>
+                    <button class="carrito-producto-eliminar" id="producto-eliminar"><i
+                            class="bi bi-trash-fill"></i></button>
+                </div>
+                <hr>
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+
 
     <footer class="footer">
         <div class="logo-footer">
