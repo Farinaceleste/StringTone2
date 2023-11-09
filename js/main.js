@@ -149,8 +149,9 @@ const productos = [
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const contadorProductos = document.querySelector("#contador-productos");
 
-function cargarProductos(productosElegidos) {
+function cargarProductos(productosElegidos, productos) {
 
     contenedorProductos.innerHTML = "";
 
@@ -170,8 +171,7 @@ function cargarProductos(productosElegidos) {
 
     actualizarBotonesAgregar();
 }
-
-cargarProductos(productos);
+cargarProductos(productos)
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -190,18 +190,64 @@ botonesCategorias.forEach(boton => {
 })
 
 function actualizarBotonesAgregar () {
+    
+    
     botonesAgregar = document.querySelectorAll(".producto-agregar");
     botonesAgregar.forEach(boton => {
         boton.addEventListener ("click", agregarAlCarrito);
+
     });
+
+
 }
 
-const productosenCarrito = [];
+let productosenCarrito;
+let productosEnCarritoLS = localStorage.getItem("productos-carrito")
+
+ 
+
+if (productosEnCarritoLS) {
+    productosenCarrito = JSON.parse (productosEnCarritoLS);
+    actualizarContador();
+} else {
+    productosenCarrito =[];
+}
 
 function agregarAlCarrito (e) {
 
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to left, #000000, #9d0208)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find (producto => producto.id === idBoton);
-    console.log (productoAgregado);
+   
+    if (productosenCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosenCarrito.findIndex(producto => producto.id === idBoton)
+        productosenCarrito[index].cantidad++;
+    } else {
+        productoAgregado.cantidad=1;
+        productosenCarrito.push(productoAgregado);
+    }
+    
+    actualizarContador();
+
+    localStorage.setItem("productos-carrito", JSON.stringify(productosenCarrito))
+}
+
+function actualizarContador (){
+    let nuevoContador = productosenCarrito.reduce((acc, producto) => acc + producto.cantidad, 0); 
+    contadorProductos.innerText = nuevoContador;
 }
 
