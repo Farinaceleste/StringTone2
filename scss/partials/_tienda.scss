@@ -1,3 +1,93 @@
+.tienda-objetos {
+    display: flex;
+
+    .menu-carrito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        margin-top: 20px;
+        width: 25%;
+        position: fixed;
+            bottom: 0;
+          left: 0;
+       
+       
+        
+
+   
+        }
+
+        .boton-menu {
+            background-color: transparent;
+            border: 0;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 900;
+            padding: 1rem;
+            font-size: .85rem;
+            width: 100%;
+            text-decoration: none;
+
+
+
+
+        }
+
+        .menu {
+           
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+            margin-top: 15px;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+            display: block;
+            float: left;
+            padding: 0 10px;
+         
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                color: white;
+                font-weight: bolder;
+                font-size: large;
+                gap: 25px;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(133, 5, 26);
+                }
+            }
+
+            .active {
+                background-color: darkred;
+            }
+        }
+    }
+
+
+
+
+
 
 .contenedor-item {
     margin-top: 30px;
@@ -6,8 +96,9 @@
     transition: .3s;
     justify-content: center;
     justify-items: center;
-    max-width: 80;
-    gap:15px;
+    max-width: 100%;
+    gap: 15px;
+    padding: 20px;
 
     @include mobile {
         display: flex;
@@ -34,7 +125,7 @@
         background-color: rgb(255, 255, 255);
         border-color: black;
         border-style: outset;
-        gap:15px;
+        gap: 15px;
         margin-bottom: 10px;
 
 
@@ -54,15 +145,15 @@
             display: flex;
             flex-direction: column;
             justify-content: end;
-            align-items:center;
+            align-items: center;
             width: 100%;
 
 
             .titulo-item {
                 font-weight: bold;
             }
-            
-            
+
+
         }
 
         .boton-item {
@@ -74,7 +165,7 @@
 
             &:hover {
                 background-color: darkred;
-                color:white;
+                color: white;
             }
 
         }
@@ -119,7 +210,7 @@
         color: white;
         width: 30%;
 
-         .card-img {
+        .card-img {
             width: 100%;
 
             &:hover {
@@ -181,93 +272,3 @@
 }
 
 /* nav bar filtro productos */
-.menu-carrito {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
-    margin-top:20px;
-
-  
-
-   
-  
-
-    .iconos-header {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin-right: 10px;
-        padding-right: 55px;
-        color:white;
-        gap:15px;
-        cursor:pointer;
-        text-decoration: none;
-        
-        a {
-            color:white;
-        }
-    }
-
-    .boton-menu {
-        background-color: transparent;
-        border: 0;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-weight: 900;
-        padding: 1rem;
-        font-size: .85rem;
-        width: 100%;
-        text-decoration: none;
-
-
-       
-        
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        gap: .5rem;
-        background-color: black;
-        align-items: center;
-        justify-content: center;
-
-        padding: 20px;
-        margin-top: 15px;
-        width: 100%;
-        align-items: center;
-        align-content: center;
-
-        li {
-            display: flex;
-            justify-content: space-between;
-            list-style: none;
-            color: white;
-            font-weight: bolder;
-            font-size: xx-large;
-            gap: 25px;
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-
-            &:hover {
-                color: rgb(133, 5, 26);
-            }
-        }
-
-        .active {
-            background-color: darkred;
-        }
-    }  
-}
-
-
-
-

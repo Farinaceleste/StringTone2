@@ -664,6 +664,72 @@
   color: rgb(217, 217, 0);
 }
 
+.tienda-objetos {
+  display: flex;
+}
+.tienda-objetos .menu-carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  width: 25%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.tienda-objetos .boton-menu {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+  font-size: 0.85rem;
+  width: 100%;
+  text-decoration: none;
+}
+.tienda-objetos .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 15px;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+.tienda-objetos .menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  gap: 25px;
+  list-style: none;
+}
+.tienda-objetos .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.tienda-objetos .menu a:hover {
+  color: rgb(133, 5, 26);
+}
+.tienda-objetos .menu .active {
+  background-color: darkred;
+}
+
 .contenedor-item {
   margin-top: 30px;
   display: flex;
@@ -671,8 +737,9 @@
   transition: 0.3s;
   justify-content: center;
   justify-items: center;
-  max-width: 80;
+  max-width: 100%;
   gap: 15px;
+  padding: 20px;
 }
 @media screen and (max-width: 576px) {
   .contenedor-item {
@@ -829,76 +896,6 @@
 }
 
 /* nav bar filtro productos */
-.menu-carrito {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: black;
-  margin-top: 20px;
-}
-.menu-carrito .iconos-header {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-right: 10px;
-  padding-right: 55px;
-  color: white;
-  gap: 15px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.menu-carrito .iconos-header a {
-  color: white;
-}
-.menu-carrito .boton-menu {
-  background-color: transparent;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-weight: 900;
-  padding: 1rem;
-  font-size: 0.85rem;
-  width: 100%;
-  text-decoration: none;
-}
-.menu-carrito .menu {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 15px;
-  width: 100%;
-  align-items: center;
-  align-content: center;
-}
-.menu-carrito .menu li {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  color: white;
-  font-weight: bolder;
-  font-size: xx-large;
-  gap: 25px;
-  list-style: none;
-}
-.menu-carrito .menu a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-.menu-carrito .menu a:hover {
-  color: rgb(133, 5, 26);
-}
-.menu-carrito .menu .active {
-  background-color: darkred;
-}
-
 @media screen and (max-width: 576px) {
   form {
     width: 80%;
