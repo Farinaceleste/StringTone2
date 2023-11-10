@@ -21,7 +21,7 @@ function cargarProductosCarrito() {
 
         productosEnCarrito.forEach(producto => {
             const div = document.createElement("div");
-            div.classList.add("carrito-pruodcto");
+            div.classList.add("carrito-producto");
 
             div.innerHTML = `
     <div class="detalle-carrito">
@@ -97,7 +97,10 @@ function eliminarDelCarrito (e) {
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
 
     productosEnCarrito.splice(index, 1);
+    cargarProductosCarrito();
+  
     localStorage.setItem("productos-carrito", JSON.stringify(productosEnCarrito));
+
     e.currentTarget.parentElement.remove();
 
     if (productosEnCarrito.length = 0) {

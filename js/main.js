@@ -1,148 +1,11 @@
-// ARRAY PRODUCTOS 
+let productos = [];
 
-const productos = [
-    {
-        id: "instrumento-01",
-        titulo: "Aerodyne Special Telecaster",
-        imagen: "../images/aerodyne-special-telecaster.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 210000
-    },
-    {
-        id: "instrumento-02",
-        titulo: "American Professional Jazzmaster",
-        imagen: "../images/american-professional-jazzmaster.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 165000
-    },
-    {
-        id: "instrumento-03",
-        titulo: "Jaguar Bass Limited Edition",
-        imagen: "../images/bajo-jaguar-ed-limitada.jpg",
-        categoria: {
-            nombre: "Bajos",
-            id: "bajos"
-        },
-        precio: 420000
-    },
-    {
-        id: "instrumento-04",
-        titulo: "Flea Jazz Bass",
-        imagen: "../images/flea-jazz-bass.jpg",
-        categoria: {
-            nombre: "Bajos",
-            id: "bajos"
-        },
-        precio: 315000
-    },
-    {
-        id: "instrumento-05",
-        titulo: "Troy Sanders Bass",
-        imagen: "../images/troy-sanders-bajo.jpg",
-        categoria: {
-            nombre: "Bajos",
-            id: "bajos"
-        },
-        precio: 190000
-    },
-    {
-        id: "instrumento-06",
-        titulo: "American Bass",
-        imagen: "../images/american-performer-bass.jpg",
-        categoria: {
-            nombre: "Bajos",
-            id: "bajos"
-        },
-        precio: 190000
-    },
-    {
-        id: "instrumento-07",
-        titulo: "American Mustang",
-        imagen: "../images/american-performer-mustang.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 550000
-    },
-    {
-        id: "instrumento-08",
-        titulo: "American Stratocaster",
-        imagen: "../images/american-profesional-stratocaster.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 450000
-    },
-    {
-        id: "instrumento-09",
-        titulo: "American Telecaster",
-        imagen: "../images/american-profesional-telecaster.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 690000
-    },
-    {
-        id: "instrumento-10",
-        titulo: "American Ultra Jazzmaster",
-        imagen: "../images/american-ultra-jazzmaster.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 880000
-    },
-    {
-        id: "instrumento-11",
-        titulo: "Malibu Special",
-        imagen: "../images/malibu-especial.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 225000
-    },
-    {
-        id: "instrumento-12",
-        titulo: "NewPorter Player",
-        imagen: "../images/newporter-player.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 150000
-    },
-    {
-        id: "instrumento-13",
-        titulo: "Tim Armstrong Hellcat",
-        imagen: "../images/tim-armstrong-hellcat.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 183000
-    },
-    {
-        id: "guitarra-14",
-        titulo: "Sonoran Mini with Bag",
-        imagen: "../images/sonoran-mini-with-bag.jpg",
-        categoria: {
-            nombre: "Guitarras",
-            id: "guitarras"
-        },
-        precio: 175000
-    }
-
-]
+fetch("../js/productos.json")
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+    });
 
 //mostrar productos en tienda, sin html
 
@@ -151,7 +14,7 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const contadorProductos = document.querySelector("#contador-productos");
 
-function cargarProductos(productosElegidos, productos) {
+function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
 
@@ -171,7 +34,7 @@ function cargarProductos(productosElegidos, productos) {
 
     actualizarBotonesAgregar();
 }
-cargarProductos(productos)
+
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
