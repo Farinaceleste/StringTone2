@@ -80,7 +80,7 @@ function agregarAlCarrito (e) {
 
     Toastify({
         text: "Producto agregado",
-        duration: 3000,
+        duration: 1000,
         destination: "https://github.com/apvarun/toastify-js",
         newWindow: true,
         close: true,
@@ -112,5 +112,11 @@ function agregarAlCarrito (e) {
 function actualizarContador (){
     let nuevoContador = productosenCarrito.reduce((acc, producto) => acc + producto.cantidad, 0); 
     contadorProductos.innerText = nuevoContador;
+
+    // if (nuevoContador === 0) {
+    //     contadorProductos.classList.add("disabled");
+    // } else {
+    //     contadorProductos.classList.remove("disabled");
+    // }
 }
 

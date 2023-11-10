@@ -1,9 +1,11 @@
 .parrafo-nosotros {
     @include estilo-titulos;
+    position: relative;
+    left:20px;
 }
 
 .container2 {
-    background: rgba(0, 0, 0, 0.566);
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +17,14 @@
     font-style: italic;
     margin-bottom: 40px;
     padding-right: 15px;
-    color: white;
+    color: black;
+
+
 
 
     img {
        
-
+        padding: 20px;
 
         @include tablet {
             width: 90%;

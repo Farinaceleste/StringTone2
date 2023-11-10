@@ -20,6 +20,7 @@ function cargarProductosCarrito() {
         contenedorCarritoProductos.innerHTML = " ";
 
         productosEnCarrito.forEach(producto => {
+            if (producto.cantidad === 0) return;
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
 
@@ -65,7 +66,6 @@ function cargarProductosCarrito() {
 
 cargarProductosCarrito();
 
-
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
@@ -74,13 +74,16 @@ function actualizarBotonesEliminar() {
   
     });
 
+    if (!productosEnCarrito || productosEnCarrito.length === 0) {
+        vaciarCarrito();
+    }
 }
 
-function eliminarDelCarrito (e) {
+function eliminarDelCarrito(e) {
 
     Toastify({
         text: "Producto eliminado",
-        duration: 3000,
+        duration:1000,
         destination: "https://github.com/apvarun/toastify-js",
         newWindow: true,
         close: true,
@@ -95,21 +98,31 @@ function eliminarDelCarrito (e) {
 
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+    const cantidad = e.currentTarget.cantidad;
 
-    productosEnCarrito.splice(index, 1);
+    if (cantidad === 1) {
+        productosEnCarrito.splice(index, 1);
+    } else {
+        productosEnCarrito[index].cantidad -= 1;
+    }
+
     cargarProductosCarrito();
-  
     localStorage.setItem("productos-carrito", JSON.stringify(productosEnCarrito));
 
-    e.currentTarget.parentElement.remove();
 
-    if (productosEnCarrito.length = 0) {
+    if (!productosEnCarrito || productosEnCarrito.length === 0) {
 
-        contenedorCarritoVacio.classList.add("disabled");
+        contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");
     }
+
+
+
+    
 }
+
+
 
 botonVaciar.addEventListener ("click", vaciarCarrito);
 

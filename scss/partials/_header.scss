@@ -12,18 +12,73 @@
         background-color: white;
     }
 
-   ul {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    gap:40px;
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        gap: 40px;
 
-    &:hover {
-        color:red;
+        &:hover {
+            color: red;
+        }
     }
 
- 
-   }
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+
+
+        &:hover {
+            color: rgb(133, 5, 26);
+        }
+    }
+
+    .carrito-header {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        cursor: pointer;
+        font-weight: bold;
+
+
+        &:hover {
+            color: rgb(133, 5, 26);
+            font-weight: bolder;
+        }
+
+        .container-cart-icon {
+            position: absolute;
+            top: 50px;
+            right: 25px;
+            font-size: x-large;
+            
+        }
+
+       
+        .numerito {
+
+            position: absolute;
+            top: 55%;
+            right: 7px;
+
+
+            background-color: white;
+            color: black;
+            width: 25px;
+            height: 25px;
+            opacity: 1.5;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+
+            
+        }
+    }
 
     .header2 {
         display: flex;

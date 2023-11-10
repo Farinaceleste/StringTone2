@@ -32,6 +32,46 @@
 .header ul:hover {
   color: red;
 }
+.header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.header a:hover {
+  color: rgb(133, 5, 26);
+}
+.header .carrito-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .carrito-header:hover {
+  color: rgb(133, 5, 26);
+  font-weight: bolder;
+}
+.header .carrito-header .container-cart-icon {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  font-size: x-large;
+}
+.header .carrito-header .numerito {
+  position: absolute;
+  top: 55%;
+  right: 7px;
+  background-color: white;
+  color: black;
+  width: 25px;
+  height: 25px;
+  opacity: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 .header .header2 {
   display: flex;
   background-color: black;
@@ -93,11 +133,10 @@
 .footer ul .whatsapp {
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: 25px;
   cursor: pointer;
   font-size: 75px;
   color: green;
-  padding: 15px;
   background-color: transparent;
 }
 .footer ul .whatsapp:hover {
@@ -106,13 +145,11 @@
 }
 @media screen and (max-width: 768px) {
   .footer ul .whatsapp {
-    margin-right: 10px;
     font-size: 70px;
   }
 }
 @media screen and (max-width: 576px) {
   .footer ul .whatsapp {
-    margin-right: 10px;
     font-size: 50px;
   }
 }
@@ -379,10 +416,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
   font-weight: bold;
+  position: relative;
+  left: 20px;
 }
 
 .container2 {
-  background: rgba(0, 0, 0, 0.566);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +432,10 @@
   font-style: italic;
   margin-bottom: 40px;
   padding-right: 15px;
-  color: white;
+  color: black;
+}
+.container2 img {
+  padding: 20px;
 }
 @media screen and (max-width: 768px) {
   .container2 img {
@@ -671,6 +713,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   z-index: 1;
   margin-top: 20px;
   width: 100%;
@@ -698,13 +741,12 @@
   background-color: black;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  flex-wrap: wrap;
   margin-top: 15px;
   width: 100%;
   align-items: center;
   align-content: center;
   float: left;
-  padding: 0 10px;
 }
 .tienda-objetos .menu li {
   display: flex;
@@ -728,6 +770,13 @@
 .tienda-objetos .menu .active {
   background-color: darkred;
 }
+@media screen and (max-width: 576px) {
+  .tienda-objetos .menu {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 25px;
+  }
+}
 
 .contenedor-item {
   margin-top: 30px;
@@ -739,6 +788,7 @@
   max-width: 100%;
   gap: 15px;
   padding: 20px;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .contenedor-item {
@@ -769,6 +819,7 @@
   border-style: outset;
   gap: 15px;
   margin-bottom: 10px;
+  width: 260px;
 }
 .contenedor-item .producto:hover {
   box-shadow: 0 0 5px black;
@@ -804,19 +855,19 @@
   font-weight: bold;
 }
 @media screen and (max-width: 990px) {
-  .contenedor-item {
+  .contenedor-item .producto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 768px) {
-  .contenedor-item {
+  .contenedor-item .producto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 576px) {
-  .contenedor-item {
+  .contenedor-item .producto {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -894,7 +945,6 @@
   padding: 5px;
 }
 
-/* nav bar filtro productos */
 @media screen and (max-width: 576px) {
   form {
     width: 80%;
@@ -1141,4 +1191,9 @@
 }
 .carrito-acciones .disabled {
   display: none;
+}
+
+.cuerpo-dev {
+  padding: 25px;
+  text-align: justify;
 }/*# sourceMappingURL=styles.css.map */

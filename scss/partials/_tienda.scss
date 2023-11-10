@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
         z-index: 1;
         
         margin-top: 20px;
@@ -12,10 +13,6 @@
         position: fixed;
         top: 110px;
        
-       
-        
-
-   
         }
 
         .boton-menu {
@@ -31,10 +28,6 @@
             font-size: .85rem;
             width: 100%;
             text-decoration: none;
-
-
-
-
         }
 
         .menu {
@@ -45,14 +38,14 @@
             background-color: black;
             align-items: center;
             justify-content: center;
-
-            padding: 30px;
+            flex-wrap: wrap;
+            
             margin-top: 15px;
             width: 100%;
             align-items: center;
             align-content: center;
             float: left;
-            padding: 0 10px;
+            
          
 
             li {
@@ -80,13 +73,15 @@
             .active {
                 background-color: darkred;
             }
+
+            @include mobile {
+                flex-wrap: wrap;
+                width: 100%;
+
+               padding-top: 25px;
+            }
         }
     }
-
-
-
-
-
 
 .contenedor-item {
     margin-top: 30px;
@@ -98,6 +93,7 @@
     max-width: 100%;
     gap: 15px;
     padding: 20px;
+    cursor: pointer;
 
     @include mobile {
         display: flex;
@@ -126,6 +122,7 @@
         border-style: outset;
         gap: 15px;
         margin-bottom: 10px;
+        width: 260px;
 
 
         &:hover {
@@ -173,22 +170,24 @@
             font-weight: bold;
 
         }
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
-    @include desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @include mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  
 }
 
 /*CARTITAS DE TIENDA*/
@@ -270,4 +269,4 @@
     padding: 5px;
 }
 
-/* nav bar filtro productos */
+

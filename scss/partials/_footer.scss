@@ -39,11 +39,11 @@
 
             position: fixed;
             bottom: 0;
-            right: 0;
+            right: 25px;
             cursor: pointer;
             font-size: 75px;
             color: green;
-            padding: 15px;
+            
             background-color: transparent;
 
             &:hover {
@@ -52,12 +52,12 @@
             }
 
             @include tablet {
-                margin-right: 10px;
+                
                 font-size: 70px;
             }
 
             @include mobile {
-                margin-right: 10px;
+                
                 font-size: 50px;
             }
         }
