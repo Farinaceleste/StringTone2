@@ -113,10 +113,6 @@ function actualizarContador (){
     let nuevoContador = productosenCarrito.reduce((acc, producto) => acc + producto.cantidad, 0); 
     contadorProductos.innerText = nuevoContador;
 
-    // if (nuevoContador === 0) {
-    //     contadorProductos.classList.add("disabled");
-    // } else {
-    //     contadorProductos.classList.remove("disabled");
-    // }
+  
 }
 
