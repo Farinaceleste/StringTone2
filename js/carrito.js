@@ -75,7 +75,12 @@ function actualizarBotonesEliminar() {
     });
 
 
-   
+    if (!productosEnCarrito || productosEnCarrito.length === 0) {
+        
+
+        
+
+    }
 }
 
 function eliminarDelCarrito(e) {

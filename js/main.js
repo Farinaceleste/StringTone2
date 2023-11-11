@@ -109,10 +109,10 @@ function agregarAlCarrito (e) {
     localStorage.setItem("productos-carrito", JSON.stringify(productosenCarrito))
 }
 
-function actualizarContador (){
-    let nuevoContador = productosenCarrito.reduce((acc, producto) => acc + producto.cantidad, 0); 
+function actualizarContador() {
+    let nuevoContador = 0; 
+    for(let i = 0; i < productosenCarrito.length; i++) {
+        nuevoContador += productosenCarrito[i].cantidad;
+    }
     contadorProductos.innerText = nuevoContador;
-
-  
 }
-
